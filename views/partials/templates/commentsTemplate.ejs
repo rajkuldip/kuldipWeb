@@ -1,0 +1,29 @@
+<section class="comment-section">
+	<div class="container" ng-controller="easyTabComments">
+		<ul class="comments">
+
+			<h2 class="mainTitle">Comments</h2>
+			<li class="commentsList" ng-repeat="post in comments">
+				<h3 class="commentTitle">
+					<span class="name">{{post.name}}</span>
+					<span class="date">{{post.date}}</span>
+				</h3>
+				<p class="commentContent">{{post.comments}}</p>
+			</li>
+		</ul>
+		<div class="post-comments">
+			<h2 class="mainTitle">Post your comment</h2>
+			<span class="postMsg"></span>
+			<div class="postCommentContainer">
+				<h3 class="postTitle">
+					<input type="text" value='' id="name" placeholder='Name'>
+					<input type="email" value='' id="email" placeholder='Email'>
+					<a class="submit" href="#" ng-click="postComment($event)"><span>Post</span></a>
+				</h3>
+				<div class="postContent">
+					<textarea placeholder="Your comment..." id='comments'></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,57 @@
+<div class="easyTabContainer">
+    <div class="easyTabTitleImageContainer">
+        <img src="/images/easytabs/title.jpg" alt="EasyTabs">
+    </div>
+    <div class="main-content">
+        <p class="para">There are several tabs related plugin available. But when it comes to responsive, we left with only few options. We needed in different forms in different occassion; in dropdown form, in carousel form or in accordian form. Recently while working on one of such kind of project requirement, I found out other developer had used seperate plugins for tabs and carousel. Therefore, I have created kind of plugin for tabs which gets covert into either of these options. Simple Stuff, Simple plug-in. </p>
+        <h3>Easy steps to include EasyTabs in your project.</h3>
+
+        <p class="code-point">1. Include below Javascript file in your project.</p>
+        <div class="code">&lt;script src="js/useTab.js"&gt;&lt;/script&gt;</div>
+        <p>Above code also includes stylesheet <i class="file">useTab.css</i> in /css folder. You can change css path from javascript file. After adding javascript you need to follow simple html structure.This structure will ensure that javascript and css file will act properly.</p>
+        <p class="code-point">2. First we need to add container for EasyTabs. <i class="file">useTabContainer</i> class name is essential here.</p>
+        <div class="code">
+            <pre>
+&lt;div <strong>class="useTabContainer"</strong>&gt;
+
+&lt;/div&gt;</pre>
+        </div>
+        <p class="code-point">3. After that, we need to add Tabs and respective Tabs content. Please note, <i class="file">useTab-header</i> and <i class="file">useTab-body</i> classes are required.</p>
+        <div class="code">
+            <pre>
+&lt;div <strong>class="useTabContainer"</strong>&gt;
+    &lt;ul class="useTab-header" <strong>data-responsive="dropdown"</strong>&gt;
+
+    &lt;/ul&gt;
+    &lt;div class="useTab-body"&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+        <p>In Above code, <i class="file">data-responsive</i> property sets output in mobile devices. There are three different output view you can select: <i class="file">dropdown</i>, <i class="file">carousel</i> or <i class="file">accordian</i>. and That's all. Isn't it? Now just add Tab title and respective content.</p>
+        <div class="code">
+            <pre>
+&lt;div class="useTabContainer"&gt;
+    &lt;ul class="useTab-header" data-responsive="dropdown"&gt;
+        &lt;li&gt;&lt;span&gt;Tab1&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span&gt;Tab2&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span&gt;Tab3&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class="useTab-body"&gt;
+        &lt;div&gt;
+                Tab1 Content
+        &lt;/div&gt;
+        &lt;div&gt;
+                Tab2 Content
+        &lt;/div&gt;
+        &lt;div&gt;
+                Tab3 Content
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+        <p>That's It. Moreover, This plugin is fully adaptive. If you want to change styles, you just need to override default styles. Please share your positive or negative experience regarding this article or plugin. You can add comments below as well as you can send me private message. I do read all messages and will try to respond as soon as I get time.</p>
+        <p>Thank you for landing on this page. And don't forget to checkout my other plug-ins and tutorials. </p>
+        <p><strong>Download: </strong></p>
+    </div>
+</div>

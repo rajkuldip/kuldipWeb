@@ -1,0 +1,498 @@
+.resume {
+	font-family: Optima;
+	.resume-menu {
+		width: 20%;
+		height: 100%;
+		text-align: center;
+		background: #1d1d1d url("/images/resume/pattern1.png") repeat 0 0;
+		color: #C2973C;
+		position: fixed;
+		z-index: 1;
+		.mobile-menu {
+			display: none;
+		}
+		.menu-container {
+			padding: 50px 0px;
+			> h2 {
+				font-size: 2em;
+				padding: 30px 0;
+				text-transform: uppercase;
+				border-bottom: 1px solid #C2973C;
+				display: inline-block;
+				margin-bottom: 20px;
+				margin-top: 100px;
+				font-weight: bold;
+				position: relative;
+				> span {
+					position: absolute;
+					top: -80px;
+					left: 25%;
+					border: 1px solid #C2973C;
+					border-radius: 50%;
+					padding: 22px;
+					&:before {
+						display: inline-block;
+					}
+				}
+			}
+			> ul {
+				margin-top: 30px;
+				font-size: 1.3em;
+				> li {
+					text-transform: uppercase;
+					a {
+						color: #C2973C;
+						padding: 20px 0px;
+						display: block;
+						text-decoration: none;
+						transition: all .3s;
+						-webkit-transition: all .3s;
+						&.selected {
+							color: #ffffff;
+						}
+					}
+					&:hover {
+						a {
+							color: #ffffff;
+						}
+					}
+					&.show {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.main-data {
+		width: 80%;
+		margin-left: 20%;
+		height: 100%;
+		overflow: hidden;
+		.main-container {
+			height: 100%;
+			section {
+				width: 80%;
+				height: 100%;
+				position: relative;
+				overflow-x: hidden;
+				float: left;
+			}
+			.home-bg, .about-bg {
+				position: absolute;
+				height: 100%;
+				left: 0;
+				z-index: 0;
+			}
+			.home-info {
+				position: absolute;
+				color: #000;
+				bottom: 38%;
+				font-size: 2.5em;
+				text-transform: uppercase;
+				line-height: 1.5em;
+				left: 50px;
+				font-family: "basic title font", Helvetica, Arial;
+				h2 {
+					border-bottom: 1px solid #C2973C;
+					font-weight: bold;
+					font-size: 1.3em;
+				}
+			}
+		}
+		h2 {
+			font-size: 2.4em;
+			text-transform: uppercase;
+			margin: 30px 0 50px;
+
+			span {
+				border-bottom: 2px solid #C2973C;
+				line-height: 1.5em;
+				display: inline-block;
+				font-weight: 700;
+			}
+		}
+	}
+	.about {
+		.about-bg {
+			opacity: .3;
+		}
+		.about-info {
+			width: 55%;
+			padding: 50px 50px 0;
+			position: relative;
+			.about-title {
+				margin-top: 20px;
+			}
+			.preface {
+				margin-bottom: 30px;
+				> h3 {
+					font-size: 1.3em;
+					text-transform: uppercase;
+					margin-bottom: 10px;
+					color: #1e1e1e;
+				}
+				p {
+					margin-bottom: 15px;
+					line-height: 1.5em;
+				}
+			}
+			.about-list {
+				margin: 20px 0;
+				>li {
+					padding: 10px 0;
+					border-bottom: 1px dotted #999;
+				}
+				.title {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+	.skills {
+		.container {
+			padding: 50px;
+			.skills-list {
+				margin-bottom: 65px;
+				li {
+					width: 25%;
+					min-width: 140px;
+					text-align: center;
+					font-family: "basic title font", Helvetica, Arial;
+					font-weight: bolder;
+					font-size: 1.6em;
+					line-height: 1.2em;
+					float: left;
+					.fa {
+						-webkit-transition: all .3s;
+						transform: rotate(0);
+						-webkit-transform: rotate(0);
+						margin-bottom: 10px;
+						border: 1px solid #C2973C;
+						border-radius: 50%;
+						padding: 14px;
+						width: 24px;
+						height: 24px;
+						font-size: 1em;
+						color: #C2973C;
+					}
+					h3 {
+						font-size: .8em;
+					}
+					&:hover {
+						.fa {
+							transform: rotate(6.28rad);
+							-webkit-transform: rotate(6.28rad);
+							background: #C2973C;
+							color: #ffffff;
+						}
+					}
+				}
+			}
+		}
+	}
+	.experience, .education, .projects {
+		&.dark {
+			background: #f1f1f1;
+		}
+		.container {
+			padding: 50px;
+			ul {
+				margin-bottom: 100px;
+			}
+			.experience-info {
+				padding-top: 20px;
+				margin-top: 20px;
+				border-top: 1px solid #C2973C;
+				.logo {
+					float: left;
+					width: 10%;
+					font-size: 4em;
+					text-align: center;
+					color: #C2973C;
+					transition: all .2s;
+					-webkit-transition: all .2s;
+					tranform: scale(1);
+					-webkit-transform: scale(1);
+				}
+				.job-list {
+					float: left;
+					width: 38%;
+					text-align: center;
+					padding: 0 10px;
+					.company-name {
+						font-size: 1.0em;
+						text-transform: uppercase;
+						margin-bottom: 15px;
+					}
+					.designation {
+						font-size: 2em;
+						font-family: "basic title font", Helvetica, Arial;
+						margin-bottom: 10px;
+						font-weight: bold;
+						line-height: 1.3em;
+					}
+				}
+				.company-info {
+					float: left;
+					width: 47%;
+					text-align: justify;
+					line-height: 1.3em;
+				}
+				&:hover {
+					.logo {
+						tranform: scale(1.3);
+						-webkit-transform: scale(1.3);
+						color: #1e1e1e;
+					}
+				}
+			}
+		}
+	}
+	.contact {
+		.container {
+			padding: 50px;
+		}
+		.content-data {
+			text-align: center;
+		}
+		.address-info {
+			li {
+				padding: 30px 0;
+				text-align: center;
+				.other-info {
+					margin-top: 10px;
+					line-height: 1.3em;
+
+				}
+				.title {
+					font-weight: bold;
+					margin-top: 5px;
+					text-transform: uppercase;
+				}
+			}
+			.fa {
+				font-size: 3em;
+				color: #C2973C;
+			}
+		}
+		.social-info {
+			margin: 30px auto;
+			text-align: center;
+			font-size: 3em;
+			li {
+				margin: 0 auto;
+				width: 70px;
+				height: 70px;
+				border: 1px solid #C2973C;
+				margin-bottom: 20px;
+				.fa {
+					display: block;
+					margin-top: 13px;
+					color: #C2973C;
+					text-decoration: none;
+					transition: all .3s;
+					-webkit-transition: all .3s;
+				}
+				&:hover {
+					.fa {
+						color: #1e1e1e;
+					}
+				}
+			}
+		}
+	}
+	.projects {
+		.duration {
+			width: 75%;
+			margin: 0 auto;
+			line-height: 1.4em;
+		}
+	}
+	.other-skills {
+		font-size: 1.3em;
+		li {
+			margin-bottom: 20px;
+			.fa-check {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+@media (max-width:767px) {
+	.resume {
+		.resume-menu {
+			width: 100%;
+			height: 40px;
+			top: 0px;
+			right: 0px;
+			position: fixed;
+			.mobile-menu {
+				display: block;
+				.title {
+					position: absolute;
+					left: 10px;
+					top: 10px;
+					font-size: 1.2em;
+					text-transform: uppercase;
+				}
+				.fa {
+					position: absolute;
+					right: 10px;
+					top: 10px;
+					font-size: 1.3em;
+					color: #C2973C;
+					text-decoration: none;
+					&.hide {
+						display: none;
+					}
+				}
+			}
+			.menu-container {
+				display: none;
+				&.show {
+					display: block;
+					z-index: 2;
+					position: fixed;
+					top: 40px;
+					bottom: 0;
+					width: 100%;
+					background: rgba(0,0,0,.9);
+					padding: 20px 0;
+					h2 {
+						font-size: 1.3em;
+						margin-top: 0;
+						.fa {
+							display: none;
+						}
+					}
+					> ul {
+						font-size: 1em;
+						width: 70%;
+						display: inline-block;
+						margin-top: 0;
+						li {
+							&.show {
+								display: block;
+							}
+							a {
+								padding: 15px 0;
+							}
+						}
+					}
+				}
+			}
+		}
+		.main-data {
+			margin: 0;
+			width: 100%;
+			overflow: visible;
+			#home {
+				height: 100% !important;
+			}
+			.main-container {
+				.home-info h2 {
+					font-size: 1.2em;
+					margin-left: 0;
+				}
+			}
+		}
+		.about {
+			.about-info {
+				width: 90%;
+				padding: 5%;
+				.preface p {
+					text-align: justify;
+				}
+				.about-title {
+					text-align: center;
+					font-size: .8em;
+				}
+			}
+		}
+		.skills {
+			.container {
+				padding: 20px;
+				.skills-title {
+					text-align: center;
+					font-size: .8em;
+				}
+				.skills-list {
+					margin-bottom: 30px;
+					 li {
+					 	width: 100%;
+					 	padding: 0 0 20px 0;
+					 	margin: 0 0 20px 0;
+					 	border-bottom: 1px solid #C2973C;
+					 	> span {
+					 		float: left;
+					 	}
+					 	span.fa {
+					 		width: 18px;
+					 		height: 18px;
+					 		font-size: 0.8em;
+					 		padding: 10px;
+					 	}
+					 	> h3 {
+					 		float: left;
+					 		margin-left: 15px;
+					 		font-size: .85em;
+							width: 80%;
+					 	}
+
+					 }
+				}
+				.other-skills {
+					li {
+						span {
+							font-size: .8em;
+							width: 90%;
+							float: left;
+						}
+						span.fa {
+							width: 18px;
+						}
+					}
+				}
+			}
+		}
+		.education, .experience, .projects {
+			.container {
+				padding: 20px;
+				.experience-info {
+					padding-top: 0;
+					margin-top: 0;
+					border-top: 0;
+					padding-bottom: 20px;
+					margin-bottom: 20px;
+					border-bottom: 1px solid #C2973C;
+					.logo {
+						width: 50px;
+						font-size: 2.3em;
+					}
+					.job-list {
+						width: 72%;
+						float: right;
+						font-size: .9em;
+						.designation {
+							font-size: 1.3em;
+						}
+					}
+					.company-info {
+						display: none;
+					}
+				}
+			}
+			.experience-title {
+				text-align: center;
+				font-size: .8em;
+			}
+		}
+		.contact {
+			height: auto !important;
+			.contact-title {
+				text-align: center;
+			}
+		}
+
+	}
+}

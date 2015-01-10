@@ -1,0 +1,32 @@
+body .home {
+	height: 650px;
+	width: 100%;
+	overflow: hidden;
+}
+.home .container > img {
+	height: 100%;
+	display: block;
+}
+.home .container {
+	height: 100%;
+	position: relative;
+}
+.home .container:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-top: 80px solid transparent;
+	border-right: 1500px solid #E06959;
+}
+.home .container:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-top: 60px solid transparent;
+	border-right: 1500px solid #ffffff;
+}
+.dark .home .container:after {
+	border-right: 1500px solid #463B47;
+}

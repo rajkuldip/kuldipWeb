@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include partials/templates/head.ejs %>
+</head>
+<body ng-app="kuldipWeb" class='<%= className%>'>
+	<% include partials/templates/menu.ejs %>
+    <div ng-controller='headAboutMe' class="dark">
+        <% include partials/templates/home.ejs %>
+    </div>
+    <div ng-controller="mainInfo" class="dark">
+        <% include partials/templates/infoTemplate.ejs %>
+    </div>
+    <div class="container">
+        <h2><span>My Journey - Timeline</span></h2>
+        <ul class="myList">
+            <li class="earlydays clearfix">
+                <div class="content">
+                    <h3><span  class="fa fa-leaf"></span>Early Days</h3>
+                    <p>
+                        I started liking web technologies back from my collge days when I entered in IT field. I still remember that thrill when I first establish connection between ASP page and MS-ACCESS in 2001.
+                    </p>
+                </div>
+            </li>
+            <li class="graduation">
+                <h3><span  class="fa fa-graduation-cap"></span>Graduation Days</h3>
+                <p>
+                    I have completed Diploma in 2003 whereas occupied Bachelor degree in 2006.  At that point only one thought in my mind was to dive in the ocean of Front End technologies.
+                </p>
+            </li>
+            <li class="job">
+                <h3><span  class="fa fa-inr"></span>Counting Money</h3>
+                <p>
+                    Since then, I have worked many multi-national companies and projects. And for that reason, I have wide specture of knowlege in Front End based technologies and User Experience fundamentals.
+                </p>
+            </li>
+            <li class="upgrade">
+                <h3><span  class="fa fa-inr"></span>Self Motivativation</h3>
+                <p>
+                    My experience/knowledge range includes Node.js, Expres.js, Angular.js, Required.js, (kind of) Backbone.js, Responsive Webpages, Accessibilities, SASS, GIT and many more....
+                </p>
+            </li>
+            <li class="teammember">
+                <h3><span  class="fa fa-inr"></span>Team Member</h3>
+                <p>
+                    I have crossed distance from Trainee Engineer to Track Leader. But still I consider myself as part of BIG team - team of Front End Developers who everyday dive into this ocean to discover yet another pearl.
+                </p>
+            </li>
+        </ul>
+
+    </div>
+    <% include partials/templates/footer.ejs %>
+    <% include partials/templates/defaultjs.ejs %>
+
+</body>
+</html>

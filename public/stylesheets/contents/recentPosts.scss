@@ -1,0 +1,137 @@
+.recentPosts {
+	padding: 80px;
+	font-weight: 100;
+	.container {
+		text-align: center;
+	}
+	.posts {
+		text-align: left;
+	}
+	h2.title {
+		font-size: 2em;
+		display: inline-block;
+		border-bottom: 1px solid #E06959;
+		padding-bottom: 20px;
+		font-weight: 500;
+		text-transform: uppercase;
+		color: #463B47;
+	}
+	.postlist {
+		margin: 30px 0 0;
+		padding: 30px 0 0;
+		border-top: 1px solid #463B47;
+		&.first {
+			border: 0;
+		}
+		.postHead {
+			margin-bottom: 20px;
+		}
+		h3.title {
+			font-size: 1.4em;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+			font-weight: 400;
+			a {
+				color: #463B47;
+				padding-bottom: 5px;
+				text-decoration: none;
+			}
+		}
+		.otherInfo span {
+			float: left;
+			margin-right: 10px;
+			border-left: 1px solid #E06959;
+			padding-left: 10px;
+			font-size: 0.8em;
+		}
+		.descriptionData {
+			overflow: hidden;
+			.imageContainer {
+				float: left;
+				width: 30%;
+				height: 200px;
+				border: 1px solid #463B47;
+				text-align: center;
+				background: rgba(91, 76, 92, 0.26);
+				padding: 20px;
+				position: relative;
+				img {
+					height: 80%;
+					box-shadow: 1px 0 7px 0 rgba(0, 0, 0, 0.5);
+					position: absolute;
+					top: 25px;
+					left: 60px;
+				}
+			}
+			> .postImage {
+				width: 200px;
+				height: 200px;
+				float: left;
+				margin-right: 20px;
+				border: 1px solid #463B47;
+				box-shadow: 0px 0px 8px 0px rgba(90, 89, 91, .5);
+			}
+			.description {
+				float: left;
+				width: 65%;
+				line-height: 1.5em;
+				border: 1px solid #463B47;
+				margin-left: -1px;
+				height: 240px;
+				background: #463B47;
+				color: #fff;
+				position: relative;
+				&:before {
+					position: absolute;
+					border-top: 20px solid transparent;
+					border-bottom: 20px solid transparent;
+					border-right: 20px solid #463B47;
+					left: -20px;
+					top: 42%;
+					content: '';
+				}
+				p {
+					padding: 48px 80px 48px 30px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width:767px) {
+	.recentPosts {
+		padding: 30px 15px;
+		h2.title {
+			font-size: 1.2em;
+			line-height: 1.5em;
+		}
+		.postlist {
+			padding: 0;
+			h3.title {
+				font-size: 1em;
+			}
+			.otherInfo span {
+				margin-bottom: 10px;
+			}
+			.descriptionData {
+				.imageContainer {
+					width: 99%;
+					padding: 0;
+					img {
+						top: 10%;
+						margin-top: 15px;
+						position: static;
+					}
+				}
+				.description {
+					width: 100%;
+					padding: 0;
+					height: auto;
+					p {
+						padding: 10px;
+					}
+				}
+			}
+		}
+	}
+}

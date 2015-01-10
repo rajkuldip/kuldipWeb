@@ -1,0 +1,1639 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../lib/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../lib/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../lib/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../lib/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../lib/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../lib/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../lib/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 49, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../lib/reset.scss */
+input, label, textarea, select, option, button {
+  outline: none;
+}
+
+/* line 52, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../lib/reset.scss */
+input:focus, label:focus, textarea:focus, select:focus, option:focus, button:focus {
+  outline: none;
+}
+
+/* line 1, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../lib/global.scss */
+img, span, i, a {
+  display: inline-block;
+}
+
+/* line 4, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../lib/global.scss */
+body {
+  font-family: 'Open Sans', Helvetica, Arial;
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+}
+
+/* line 11, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../lib/global.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 16, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../lib/global.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 20, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../lib/global.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 1, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/menu.scss */
+.menu {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 150px;
+  height: 400px;
+  z-index: 1;
+}
+/* line 9, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/menu.scss */
+.menu .menuList a {
+  display: block;
+  padding: 20px 20px 10px;
+  text-align: center;
+  color: #463B47;
+}
+/* line 14, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/menu.scss */
+.menu .menuList a span {
+  display: inline-block;
+  padding: 22px 20px 18px;
+  border-radius: 50%;
+  border: 1px solid #463B47;
+  font-size: 1.5em;
+  background: rgba(255, 255, 255, 0.5);
+  width: 25px;
+  height: 25px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+}
+/* line 25, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/menu.scss */
+.menu .menuList a span:hover {
+  background: #463B47;
+  color: #ffffff;
+  box-shadow: 0px 0 10px 2px rgba(255, 255, 255, 0.3);
+  border: 1px solid #fff;
+}
+
+/* line 1, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/home.scss */
+body .home {
+  height: 650px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 6, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/home.scss */
+.home .container > img {
+  height: 100%;
+  display: block;
+}
+
+/* line 10, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/home.scss */
+.home .container {
+  height: 100%;
+  position: relative;
+}
+
+/* line 14, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/home.scss */
+.home .container:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 80px solid transparent;
+  border-right: 1500px solid #E06959;
+}
+
+/* line 22, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/home.scss */
+.home .container:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 60px solid transparent;
+  border-right: 1500px solid #ffffff;
+}
+
+/* line 30, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/home.scss */
+.dark .home .container:after {
+  border-right: 1500px solid #463B47;
+}
+
+/* line 1, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/mainInfo.scss */
+.main_info {
+  width: 100%;
+}
+
+/* line 4, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/mainInfo.scss */
+.dark .main_info {
+  width: 100%;
+  background: #463B47;
+  color: #ffffff;
+}
+
+/* line 9, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/mainInfo.scss */
+.main_info .container {
+  padding: 70px;
+  text-align: center;
+}
+
+/* line 13, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/mainInfo.scss */
+.main_info .container h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  display: inline-block;
+  border-bottom: 1px solid #E06959;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  color: #463B47;
+}
+
+/* line 23, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/mainInfo.scss */
+.dark .main_info .container h2 {
+  color: #ffffff;
+}
+
+/* line 26, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/mainInfo.scss */
+.main_info .info_content {
+  width: 65%;
+  display: inline-block;
+  line-height: 1.9em;
+  font-weight: 100;
+}
+
+/* line 32, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/mainInfo.scss */
+.main_info .hide {
+  display: none;
+}
+
+/* line 35, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/mainInfo.scss */
+.main_info .show a {
+  padding: 10px 15px;
+  margin-top: 50px;
+  text-decoration: none;
+  border: 1px solid #463B47;
+  transition: all .2s;
+  color: #111;
+  text-transform: uppercase;
+}
+/* line 43, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/mainInfo.scss */
+.main_info .show a:hover {
+  color: #ffffff;
+  background: #463B47;
+}
+
+/* line 48, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/mainInfo.scss */
+.dark .main_info .show a {
+  background: #463B47;
+  color: #ffffff;
+  border: 1px solid #fff;
+}
+/* line 52, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/mainInfo.scss */
+.dark .main_info .show a:hover {
+  color: #463B47;
+  background: #ffffff;
+}
+
+@media (max-width: 767px) {
+  /* line 60, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/mainInfo.scss */
+  .main_info .container {
+    padding: 15px;
+  }
+  /* line 62, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/mainInfo.scss */
+  .main_info .container h2 {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+  /* line 67, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/mainInfo.scss */
+  .main_info .info_content {
+    width: 100%;
+    font-size: .85em;
+  }
+  /* line 71, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/mainInfo.scss */
+  .main_info .show a {
+    margin: 15px;
+    font-size: .85em;
+  }
+}
+/* line 1, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts {
+  padding: 80px;
+  font-weight: 100;
+}
+/* line 4, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts .container {
+  text-align: center;
+}
+/* line 7, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts .posts {
+  text-align: left;
+}
+/* line 10, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts h2.title {
+  font-size: 2em;
+  display: inline-block;
+  border-bottom: 1px solid #E06959;
+  padding-bottom: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #463B47;
+}
+/* line 19, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts .postlist {
+  margin: 30px 0 0;
+  padding: 30px 0 0;
+  border-top: 1px solid #463B47;
+}
+/* line 23, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts .postlist.first {
+  border: 0;
+}
+/* line 26, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts .postlist .postHead {
+  margin-bottom: 20px;
+}
+/* line 29, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts .postlist h3.title {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+/* line 34, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts .postlist h3.title a {
+  color: #463B47;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+/* line 40, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts .postlist .otherInfo span {
+  float: left;
+  margin-right: 10px;
+  border-left: 1px solid #E06959;
+  padding-left: 10px;
+  font-size: 0.8em;
+}
+/* line 47, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts .postlist .descriptionData {
+  overflow: hidden;
+}
+/* line 49, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts .postlist .descriptionData .imageContainer {
+  float: left;
+  width: 30%;
+  height: 200px;
+  border: 1px solid #463B47;
+  text-align: center;
+  background: rgba(91, 76, 92, 0.26);
+  padding: 20px;
+  position: relative;
+}
+/* line 58, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts .postlist .descriptionData .imageContainer img {
+  height: 80%;
+  box-shadow: 1px 0 7px 0 rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 25px;
+  left: 60px;
+}
+/* line 66, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts .postlist .descriptionData > .postImage {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-right: 20px;
+  border: 1px solid #463B47;
+  box-shadow: 0px 0px 8px 0px rgba(90, 89, 91, 0.5);
+}
+/* line 74, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts .postlist .descriptionData .description {
+  float: left;
+  width: 65%;
+  line-height: 1.5em;
+  border: 1px solid #463B47;
+  margin-left: -1px;
+  height: 240px;
+  background: #463B47;
+  color: #fff;
+  position: relative;
+}
+/* line 84, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts .postlist .descriptionData .description:before {
+  position: absolute;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #463B47;
+  left: -20px;
+  top: 42%;
+  content: '';
+}
+/* line 93, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts .postlist .descriptionData .description p {
+  padding: 48px 80px 48px 30px;
+}
+
+@media (max-width: 767px) {
+  /* line 102, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  .recentPosts {
+    padding: 30px 15px;
+  }
+  /* line 104, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  .recentPosts h2.title {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+  /* line 108, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  .recentPosts .postlist {
+    padding: 0;
+  }
+  /* line 110, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  .recentPosts .postlist h3.title {
+    font-size: 1em;
+  }
+  /* line 113, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  .recentPosts .postlist .otherInfo span {
+    margin-bottom: 10px;
+  }
+  /* line 117, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  .recentPosts .postlist .descriptionData .imageContainer {
+    width: 99%;
+    padding: 0;
+  }
+  /* line 120, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  .recentPosts .postlist .descriptionData .imageContainer img {
+    top: 10%;
+    margin-top: 15px;
+    position: static;
+  }
+  /* line 126, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  .recentPosts .postlist .descriptionData .description {
+    width: 100%;
+    padding: 0;
+    height: auto;
+  }
+  /* line 130, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  .recentPosts .postlist .descriptionData .description p {
+    padding: 10px;
+  }
+}
+/* line 2, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+.easyTabContainer .easyTabTitleImageContainer {
+  height: 200px;
+  overflow: hidden;
+  padding: 80px 80px 0;
+  text-align: center;
+  box-shadow: inset 0px 0px 8px 4px rgba(0, 0, 0, 0.1);
+}
+/* line 8, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+.easyTabContainer .easyTabTitleImageContainer img {
+  height: 170%;
+  box-shadow: 14px 10px 12px -4px rgba(0, 0, 0, 0.2);
+}
+/* line 13, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+.easyTabContainer .main-content {
+  padding: 50px 50px 0;
+  font-size: 1em;
+  font-weight: 100;
+  line-height: 1.5em;
+}
+/* line 18, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+.easyTabContainer .main-content p, .easyTabContainer .main-content h3, .easyTabContainer .main-content div {
+  margin-bottom: 20px;
+}
+/* line 21, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+.easyTabContainer .main-content h3 {
+  font-weight: 500;
+}
+/* line 24, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+.easyTabContainer .main-content .code-point {
+  margin-bottom: 5px;
+}
+/* line 27, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+.easyTabContainer .main-content .code {
+  width: 90%;
+  padding: 20px;
+  background: #eee;
+  color: #119;
+  border: 1px solid #463B47;
+  font-size: .9em;
+  box-shadow: inset 0 0 9px 3px rgba(91, 76, 92, 0.1);
+  text-shadow: 1px 1px 0px #fff;
+  margin-bottom: 40px;
+  font-family: monospace;
+}
+/* line 38, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+.easyTabContainer .main-content .code strong {
+  font-weight: 700;
+}
+/* line 41, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+.easyTabContainer .main-content .code pre {
+  white-space: pre-wrap;
+}
+/* line 45, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+.easyTabContainer .main-content .file {
+  padding: 0 5px;
+  background: #eee;
+  color: #119;
+  font-size: .9em;
+  box-shadow: inset 0 0 9px 3px rgba(179, 122, 228, 0.1);
+  text-shadow: 1px 1px 0px #fff;
+  font-family: monospace;
+}
+
+@media (max-width: 767px) {
+  /* line 58, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+  .easyTabContainer {
+    width: 100%;
+  }
+  /* line 60, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+  .easyTabContainer .main-content {
+    padding: 50px 20px;
+  }
+  /* line 63, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+  .easyTabContainer .easyTabTitleImageContainer {
+    padding: 20px 20px 0;
+  }
+}
+/* line 1, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section {
+  padding: 50px 50px 0;
+}
+/* line 4, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .comment-section .container > ul,
+.comment-section .comment-section .container > div {
+  margin-top: 40px;
+}
+/* line 7, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .mainTitle {
+  color: #463B47;
+  font-size: 2em;
+  border-bottom: 1px solid #E06959;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+/* line 16, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .commentsList, .comment-section .postCommentContainer {
+  background: #ffffff;
+  border: 1px solid #463B47;
+  margin-bottom: 10px;
+  font-size: .85em;
+  text-align: left;
+}
+/* line 23, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .postCommentContainer {
+  margin-bottom: 50px;
+}
+/* line 26, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .commentContent, .comment-section .postContent {
+  padding: 20px 10px;
+}
+/* line 29, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .comments {
+  text-align: center;
+}
+/* line 31, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .comments .commentTitle {
+  padding: 10px 10px 3px;
+  background: rgba(91, 76, 92, 0.25);
+  color: #463B47;
+  height: 18px;
+  font-size: .9em;
+  position: relative;
+}
+/* line 38, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .comments .commentTitle .name {
+  text-transform: uppercase;
+}
+/* line 41, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .comments .commentTitle .date {
+  position: absolute;
+  right: 20px;
+  top: 40%;
+  font-size: .8em;
+}
+/* line 49, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .post-comments {
+  margin-top: 30px;
+  position: relative;
+  text-align: center;
+}
+/* line 53, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .post-comments .postTitle {
+  padding: 15px 10px;
+  background: rgba(91, 76, 92, 0.25);
+  border-bottom: 1px solid #463B47;
+  color: #fff;
+  height: 35px;
+  font-size: 1em;
+  position: relative;
+}
+/* line 61, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .post-comments .postTitle input {
+  width: 300px;
+  height: 25px;
+  border: 1px solid #463B47;
+  padding: 5px 15px;
+  font-size: 80%;
+  margin-right: 20px;
+}
+/* line 69, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .post-comments .postTitle .submit {
+  position: absolute;
+  right: 15px;
+  top: 17px;
+  display: block;
+  background: #ffffff;
+  color: #463B47;
+  border: 1px solid #463B47;
+}
+/* line 77, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .post-comments .postTitle .submit span {
+  padding: 8px 20px;
+  text-transform: uppercase;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+}
+/* line 83, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .post-comments .postTitle .submit:hover {
+  background: #463B47;
+  color: #ffffff;
+}
+/* line 89, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .post-comments .postMsg {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  padding: 10px 20px;
+  color: #fff;
+  z-index: 1;
+  transition: all .2s;
+  transform: scale(0);
+}
+/* line 98, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .post-comments .postMsg.success {
+  transform: scale(1);
+  background: #161;
+}
+/* line 102, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .post-comments .postMsg.error {
+  transform: scale(1);
+  background: #911;
+}
+/* line 107, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .post-comments .postContent {
+  display: block;
+  height: 100px;
+  position: relative;
+}
+/* line 111, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .post-comments .postContent textarea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  resize: none;
+  font-size: 100%;
+}
+
+@media (max-width: 767px) {
+  /* line 123, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+  .comment-section {
+    padding: 20px;
+  }
+  /* line 125, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+  .comment-section .mainTitle {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+  }
+  /* line 129, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+  .comment-section .commentContent {
+    line-height: 1.3em;
+  }
+  /* line 133, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+  .comment-section .post-comments .postTitle {
+    height: auto;
+  }
+  /* line 135, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+  .comment-section .post-comments .postTitle input {
+    width: 88%;
+    margin-bottom: 5px;
+    padding: 5px 15px;
+    margin-right: 0;
+  }
+  /* line 141, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+  .comment-section .post-comments .postTitle .submit {
+    width: 88%;
+    padding: 0 15px;
+    text-align: center;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  /* line 150, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/comments.scss */
+  .comment-section .post-comments .postMsg {
+    font-size: .85em;
+    top: 38px;
+  }
+}
+/* line 1, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/footer.scss */
+.footer {
+  padding: 15px 80px;
+  background: #463B47;
+  position: relative;
+  font-family: "Open Sans", Helvetica, Arial;
+}
+/* line 6, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/footer.scss */
+.footer .container {
+  text-align: center;
+}
+/* line 9, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/footer.scss */
+.footer .main {
+  display: inline-block;
+}
+/* line 11, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/footer.scss */
+.footer .main li {
+  float: left;
+  margin: 0 20px;
+}
+/* line 14, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/footer.scss */
+.footer .main li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  /* line 24, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/footer.scss */
+  .footer {
+    padding: 15px;
+    text-align: center;
+    font-size: .85em;
+  }
+}
+/* line 2, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/aboutme.scss */
+.aboutMePage > .container {
+  padding: 0 0 20px;
+  margin-bottom: 30px;
+  position: relative;
+  text-align: center;
+}
+/* line 7, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/aboutme.scss */
+.aboutMePage > .container > h2 {
+  font-size: 2.2em;
+  text-transform: uppercase;
+  line-height: 2em;
+  text-align: center;
+  margin: 60px 0;
+  border-bottom: 1px solid #E06959;
+  display: inline-block;
+  color: #463B47;
+}
+/* line 17, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/aboutme.scss */
+.aboutMePage > .container > ul {
+  width: 50%;
+  margin-left: 50%;
+  position: relative;
+  text-align: left;
+}
+/* line 22, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/aboutme.scss */
+.aboutMePage > .container > ul:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid #E06959;
+}
+/* line 29, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/aboutme.scss */
+.aboutMePage > .container > ul > li {
+  margin: 0 30px 70px;
+}
+/* line 31, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/aboutme.scss */
+.aboutMePage > .container > ul > li p {
+  line-height: 1.7em;
+  color: #463B47;
+  font-size: .85em;
+}
+/* line 38, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/aboutme.scss */
+.aboutMePage > .container h3 {
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 1px solid #463B47;
+  padding-bottom: 5px;
+  position: relative;
+}
+/* line 46, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/aboutme.scss */
+.aboutMePage > .container h3 span {
+  display: inline-block;
+  position: absolute;
+  left: -54px;
+  top: -12px;
+  padding: 10px;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  text-align: center;
+}
+/* line 56, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/aboutme.scss */
+.aboutMePage > .container h3 span:before {
+  font-size: .65em;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 7px 5px 3px;
+  background: #463B47;
+  color: #fff;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  /* line 73, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/aboutme.scss */
+  .aboutMePage > .container {
+    padding: 0;
+  }
+  /* line 75, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/aboutme.scss */
+  .aboutMePage > .container h2 {
+    margin: 30px 0;
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+  /* line 80, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/aboutme.scss */
+  .aboutMePage > .container ul {
+    width: auto;
+    margin-left: 5%;
+  }
+}
+/* line 3, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message {
+  background: #463B47;
+  padding: 0 50px 100px;
+  text-align: center;
+  position: relative;
+}
+/* line 8, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message > h2 {
+  font-size: 2.2em;
+  text-transform: uppercase;
+  line-height: 2em;
+  text-align: center;
+  margin: 60px 0;
+  border-bottom: 1px solid #E06959;
+  display: inline-block;
+  color: #ffffff;
+}
+/* line 18, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message > ul {
+  width: 74%;
+  margin-left: 10%;
+  text-align: left;
+  box-shadow: 0 0 0px 20px rgba(255, 255, 255, 0.1);
+  background: #fff;
+  padding: 30px;
+  text-align: left;
+}
+/* line 26, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message > ul > li {
+  padding: 20px 20px 10px;
+}
+/* line 28, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message > ul > li input[type=text], .contactMePage > .container .send-message > ul > li input[type=email], .contactMePage > .container .send-message > ul > li textarea {
+  width: 320px;
+  height: 25px;
+  border: 1px solid #463B47;
+  padding: 10px 15px;
+  color: #463B47;
+  background: rgba(91, 76, 92, 0.26);
+  font-size: .85em;
+}
+/* line 37, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message > ul > li textarea {
+  height: 100px;
+}
+/* line 41, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message > ul .send-button {
+  margin-left: 20px;
+  margin-top: 20px;
+  border: 1px solid #463B47;
+  color: #463B47;
+  text-transform: uppercase;
+  font-size: .85em;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+}
+/* line 50, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message > ul .send-button span {
+  padding: 8px 20px;
+}
+/* line 53, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message > ul .send-button:hover {
+  background: #463B47;
+  color: #ffffff;
+}
+/* line 59, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message .contact-details {
+  padding: 0;
+  position: absolute;
+  top: 46%;
+  right: 25%;
+  text-align: center;
+}
+/* line 65, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message .contact-details > h2 {
+  font-size: 2.2em;
+  text-transform: uppercase;
+  line-height: 2em;
+  text-align: center;
+  margin: 60px 0;
+  border-bottom: 1px solid #E06959;
+  display: inline-block;
+}
+/* line 74, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message .contact-details .details {
+  font-size: 1.7em;
+  line-height: 1.5em;
+  margin-bottom: 50px;
+}
+/* line 78, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message .contact-details .details > span {
+  display: block;
+  font-size: .6em;
+}
+/* line 83, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message .contact-details > ul {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 87, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message .contact-details > ul > li {
+  margin: 0px 10px;
+  display: inline-block;
+}
+/* line 90, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message .contact-details > ul > li .fa {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  font-size: 1.5em;
+  width: 56px;
+  height: 56px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+}
+/* line 99, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message .contact-details > ul > li .fa:before {
+  position: absolute;
+  top: 28%;
+  left: 30%;
+}
+/* line 104, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message .contact-details > ul > li .fa.fa-twitter {
+  border: 1px solid #469ae9;
+  color: #469ae9;
+}
+/* line 108, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message .contact-details > ul > li .fa.fa-linkedin {
+  border: 1px solid #1466a6;
+  color: #1466a6;
+}
+/* line 112, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message .contact-details > ul > li .fa:hover {
+  background: #463B47;
+  color: #ffffff;
+}
+/* line 113, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message .contact-details > ul > li .fa:hover.fa-twitter {
+  background: #469ae9;
+}
+/* line 116, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message .contact-details > ul > li .fa:hover.fa-linkedin {
+  background: #1466a6;
+}
+/* line 126, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message ::-webkit-input-placeholder {
+  color: #999;
+}
+/* line 130, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message :-moz-placeholder {
+  /* Firefox 18- */
+  color: #999;
+}
+/* line 134, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #999;
+}
+/* line 138, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message :-ms-input-placeholder {
+  color: #999;
+}
+/* line 142, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .contact-quote {
+  height: 200px;
+  padding: 100px;
+  text-align: center;
+}
+/* line 146, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .contact-quote > p {
+  width: 500px;
+  display: inline-block;
+  line-height: 2em;
+  font-size: 1.5em;
+  position: relative;
+  color: #463B47;
+}
+/* line 153, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .contact-quote > p > span {
+  position: absolute;
+  bottom: -50px;
+  display: inline-block;
+  width: 200px;
+  right: 0;
+  font-size: .6em;
+  font-style: italic;
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  /* line 171, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  .contactMePage > .container .send-message {
+    padding: 0;
+  }
+  /* line 173, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  .contactMePage > .container .send-message > h2 {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin: 0 0 30px;
+  }
+  /* line 178, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  .contactMePage > .container .send-message > ul {
+    padding: 5%;
+    width: auto;
+    box-shadow: none;
+    margin-left: 0;
+    text-align: left;
+  }
+  /* line 184, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  .contactMePage > .container .send-message > ul li {
+    padding: 20px 0;
+  }
+  /* line 186, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  .contactMePage > .container .send-message > ul li input[type=text], .contactMePage > .container .send-message > ul li input[type=email], .contactMePage > .container .send-message > ul li textarea {
+    width: 89%;
+  }
+  /* line 190, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  .contactMePage > .container .send-message > ul .send-button {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+  }
+  /* line 197, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  .contactMePage > .container .send-message .contact-details {
+    padding: 15px;
+    position: relative;
+    top: auto;
+    right: auto;
+    color: #ffffff;
+  }
+  /* line 203, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  .contactMePage > .container .send-message .contact-details .details {
+    margin-bottom: 30px;
+    font-size: 1.3em;
+  }
+  /* line 209, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  .contactMePage > .container .contact-quote {
+    padding: 15px;
+  }
+  /* line 211, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  .contactMePage > .container .contact-quote > p {
+    font-size: 1em;
+    width: 100%;
+  }
+  /* line 214, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  .contactMePage > .container .contact-quote > p > span {
+    bottom: -30px;
+  }
+}
+/* line 1, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume {
+  font-family: Optima;
+}
+/* line 3, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .resume-menu {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  background: #1d1d1d url("/images/resume/pattern1.png") repeat 0 0;
+  color: #C2973C;
+  position: fixed;
+  z-index: 1;
+}
+/* line 11, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .resume-menu .mobile-menu {
+  display: none;
+}
+/* line 14, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .resume-menu .menu-container {
+  padding: 50px 0px;
+}
+/* line 16, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .resume-menu .menu-container > h2 {
+  font-size: 2em;
+  padding: 30px 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #C2973C;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  font-weight: bold;
+  position: relative;
+}
+/* line 26, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .resume-menu .menu-container > h2 > span {
+  position: absolute;
+  top: -80px;
+  left: 25%;
+  border: 1px solid #C2973C;
+  border-radius: 50%;
+  padding: 22px;
+}
+/* line 33, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .resume-menu .menu-container > h2 > span:before {
+  display: inline-block;
+}
+/* line 38, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .resume-menu .menu-container > ul {
+  margin-top: 30px;
+  font-size: 1.3em;
+}
+/* line 41, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .resume-menu .menu-container > ul > li {
+  text-transform: uppercase;
+}
+/* line 43, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .resume-menu .menu-container > ul > li a {
+  color: #C2973C;
+  padding: 20px 0px;
+  display: block;
+  text-decoration: none;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+}
+/* line 50, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .resume-menu .menu-container > ul > li a.selected {
+  color: #ffffff;
+}
+/* line 55, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .resume-menu .menu-container > ul > li:hover a {
+  color: #ffffff;
+}
+/* line 59, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .resume-menu .menu-container > ul > li.show {
+  display: none;
+}
+/* line 66, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .main-data {
+  width: 80%;
+  margin-left: 20%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 71, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .main-data .main-container {
+  height: 100%;
+}
+/* line 73, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .main-data .main-container section {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  float: left;
+}
+/* line 80, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .main-data .main-container .home-bg, .resume .main-data .main-container .about-bg {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  z-index: 0;
+}
+/* line 86, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .main-data .main-container .home-info {
+  position: absolute;
+  color: #000;
+  bottom: 38%;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  left: 50px;
+  font-family: "basic title font", Helvetica, Arial;
+}
+/* line 95, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .main-data .main-container .home-info h2 {
+  border-bottom: 1px solid #C2973C;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+/* line 102, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .main-data h2 {
+  font-size: 2.4em;
+  text-transform: uppercase;
+  margin: 30px 0 50px;
+}
+/* line 107, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .main-data h2 span {
+  border-bottom: 2px solid #C2973C;
+  line-height: 1.5em;
+  display: inline-block;
+  font-weight: 700;
+}
+/* line 116, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .about .about-bg {
+  opacity: .3;
+}
+/* line 119, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .about .about-info {
+  width: 55%;
+  padding: 50px 50px 0;
+  position: relative;
+}
+/* line 123, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .about .about-info .about-title {
+  margin-top: 20px;
+}
+/* line 126, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .about .about-info .preface {
+  margin-bottom: 30px;
+}
+/* line 128, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .about .about-info .preface > h3 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #1e1e1e;
+}
+/* line 134, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .about .about-info .preface p {
+  margin-bottom: 15px;
+  line-height: 1.5em;
+}
+/* line 139, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .about .about-info .about-list {
+  margin: 20px 0;
+}
+/* line 141, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .about .about-info .about-list > li {
+  padding: 10px 0;
+  border-bottom: 1px dotted #999;
+}
+/* line 145, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .about .about-info .about-list .title {
+  margin-right: 10px;
+}
+/* line 152, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .skills .container {
+  padding: 50px;
+}
+/* line 154, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .skills .container .skills-list {
+  margin-bottom: 65px;
+}
+/* line 156, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .skills .container .skills-list li {
+  width: 25%;
+  min-width: 140px;
+  text-align: center;
+  font-family: "basic title font", Helvetica, Arial;
+  font-weight: bolder;
+  font-size: 1.6em;
+  line-height: 1.2em;
+  float: left;
+}
+/* line 165, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .skills .container .skills-list li .fa {
+  -webkit-transition: all .3s;
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  margin-bottom: 10px;
+  border: 1px solid #C2973C;
+  border-radius: 50%;
+  padding: 14px;
+  width: 24px;
+  height: 24px;
+  font-size: 1em;
+  color: #C2973C;
+}
+/* line 178, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .skills .container .skills-list li h3 {
+  font-size: .8em;
+}
+/* line 182, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .skills .container .skills-list li:hover .fa {
+  transform: rotate(6.28rad);
+  -webkit-transform: rotate(6.28rad);
+  background: #C2973C;
+  color: #ffffff;
+}
+/* line 194, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .experience.dark, .resume .education.dark, .resume .projects.dark {
+  background: #f1f1f1;
+}
+/* line 197, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .experience .container, .resume .education .container, .resume .projects .container {
+  padding: 50px;
+}
+/* line 199, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .experience .container ul, .resume .education .container ul, .resume .projects .container ul {
+  margin-bottom: 100px;
+}
+/* line 202, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .experience .container .experience-info, .resume .education .container .experience-info, .resume .projects .container .experience-info {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #C2973C;
+}
+/* line 206, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .experience .container .experience-info .logo, .resume .education .container .experience-info .logo, .resume .projects .container .experience-info .logo {
+  float: left;
+  width: 10%;
+  font-size: 4em;
+  text-align: center;
+  color: #C2973C;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  tranform: scale(1);
+  -webkit-transform: scale(1);
+}
+/* line 217, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .experience .container .experience-info .job-list, .resume .education .container .experience-info .job-list, .resume .projects .container .experience-info .job-list {
+  float: left;
+  width: 38%;
+  text-align: center;
+  padding: 0 10px;
+}
+/* line 222, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .experience .container .experience-info .job-list .company-name, .resume .education .container .experience-info .job-list .company-name, .resume .projects .container .experience-info .job-list .company-name {
+  font-size: 1.0em;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+/* line 227, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .experience .container .experience-info .job-list .designation, .resume .education .container .experience-info .job-list .designation, .resume .projects .container .experience-info .job-list .designation {
+  font-size: 2em;
+  font-family: "basic title font", Helvetica, Arial;
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+/* line 235, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .experience .container .experience-info .company-info, .resume .education .container .experience-info .company-info, .resume .projects .container .experience-info .company-info {
+  float: left;
+  width: 47%;
+  text-align: justify;
+  line-height: 1.3em;
+}
+/* line 242, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .experience .container .experience-info:hover .logo, .resume .education .container .experience-info:hover .logo, .resume .projects .container .experience-info:hover .logo {
+  tranform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  color: #1e1e1e;
+}
+/* line 252, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .contact .container {
+  padding: 50px;
+}
+/* line 255, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .contact .content-data {
+  text-align: center;
+}
+/* line 259, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .contact .address-info li {
+  padding: 30px 0;
+  text-align: center;
+}
+/* line 262, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .contact .address-info li .other-info {
+  margin-top: 10px;
+  line-height: 1.3em;
+}
+/* line 267, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .contact .address-info li .title {
+  font-weight: bold;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+/* line 273, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .contact .address-info .fa {
+  font-size: 3em;
+  color: #C2973C;
+}
+/* line 278, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .contact .social-info {
+  margin: 30px auto;
+  text-align: center;
+  font-size: 3em;
+}
+/* line 282, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .contact .social-info li {
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #C2973C;
+  margin-bottom: 20px;
+}
+/* line 288, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .contact .social-info li .fa {
+  display: block;
+  margin-top: 13px;
+  color: #C2973C;
+  text-decoration: none;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+}
+/* line 297, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .contact .social-info li:hover .fa {
+  color: #1e1e1e;
+}
+/* line 305, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .projects .duration {
+  width: 75%;
+  margin: 0 auto;
+  line-height: 1.4em;
+}
+/* line 311, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .other-skills {
+  font-size: 1.3em;
+}
+/* line 313, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .other-skills li {
+  margin-bottom: 20px;
+}
+/* line 315, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+.resume .other-skills li .fa-check {
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  /* line 323, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .resume-menu {
+    width: 100%;
+    height: 40px;
+    top: 0px;
+    right: 0px;
+    position: fixed;
+  }
+  /* line 329, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .resume-menu .mobile-menu {
+    display: block;
+  }
+  /* line 331, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .resume-menu .mobile-menu .title {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+  /* line 338, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .resume-menu .mobile-menu .fa {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1.3em;
+    color: #C2973C;
+    text-decoration: none;
+  }
+  /* line 345, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .resume-menu .mobile-menu .fa.hide {
+    display: none;
+  }
+  /* line 350, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .resume-menu .menu-container {
+    display: none;
+  }
+  /* line 352, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .resume-menu .menu-container.show {
+    display: block;
+    z-index: 2;
+    position: fixed;
+    top: 40px;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px 0;
+  }
+  /* line 361, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .resume-menu .menu-container.show h2 {
+    font-size: 1.3em;
+    margin-top: 0;
+  }
+  /* line 364, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .resume-menu .menu-container.show h2 .fa {
+    display: none;
+  }
+  /* line 368, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .resume-menu .menu-container.show > ul {
+    font-size: 1em;
+    width: 70%;
+    display: inline-block;
+    margin-top: 0;
+  }
+  /* line 374, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .resume-menu .menu-container.show > ul li.show {
+    display: block;
+  }
+  /* line 377, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .resume-menu .menu-container.show > ul li a {
+    padding: 15px 0;
+  }
+  /* line 385, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .main-data {
+    margin: 0;
+    width: 100%;
+    overflow: visible;
+  }
+  /* line 389, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .main-data #home {
+    height: 100% !important;
+  }
+  /* line 393, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .main-data .main-container .home-info h2 {
+    font-size: 1.2em;
+    margin-left: 0;
+  }
+  /* line 400, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .about .about-info {
+    width: 90%;
+    padding: 5%;
+  }
+  /* line 403, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .about .about-info .preface p {
+    text-align: justify;
+  }
+  /* line 406, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .about .about-info .about-title {
+    text-align: center;
+    font-size: .8em;
+  }
+  /* line 413, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .skills .container {
+    padding: 20px;
+  }
+  /* line 415, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .skills .container .skills-title {
+    text-align: center;
+    font-size: .8em;
+  }
+  /* line 419, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .skills .container .skills-list {
+    margin-bottom: 30px;
+  }
+  /* line 421, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .skills .container .skills-list li {
+    width: 100%;
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #C2973C;
+  }
+  /* line 426, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .skills .container .skills-list li > span {
+    float: left;
+  }
+  /* line 429, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .skills .container .skills-list li span.fa {
+    width: 18px;
+    height: 18px;
+    font-size: 0.8em;
+    padding: 10px;
+  }
+  /* line 435, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .skills .container .skills-list li > h3 {
+    float: left;
+    margin-left: 15px;
+    font-size: .85em;
+    width: 80%;
+  }
+  /* line 446, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .skills .container .other-skills li span {
+    font-size: .8em;
+    width: 90%;
+    float: left;
+  }
+  /* line 451, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .skills .container .other-skills li span.fa {
+    width: 18px;
+  }
+  /* line 459, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .education .container, .resume .experience .container, .resume .projects .container {
+    padding: 20px;
+  }
+  /* line 461, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .education .container .experience-info, .resume .experience .container .experience-info, .resume .projects .container .experience-info {
+    padding-top: 0;
+    margin-top: 0;
+    border-top: 0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #C2973C;
+  }
+  /* line 468, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .education .container .experience-info .logo, .resume .experience .container .experience-info .logo, .resume .projects .container .experience-info .logo {
+    width: 50px;
+    font-size: 2.3em;
+  }
+  /* line 472, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .education .container .experience-info .job-list, .resume .experience .container .experience-info .job-list, .resume .projects .container .experience-info .job-list {
+    width: 72%;
+    float: right;
+    font-size: .9em;
+  }
+  /* line 476, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .education .container .experience-info .job-list .designation, .resume .experience .container .experience-info .job-list .designation, .resume .projects .container .experience-info .job-list .designation {
+    font-size: 1.3em;
+  }
+  /* line 480, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .education .container .experience-info .company-info, .resume .experience .container .experience-info .company-info, .resume .projects .container .experience-info .company-info {
+    display: none;
+  }
+  /* line 485, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .education .experience-title, .resume .experience .experience-title, .resume .projects .experience-title {
+    text-align: center;
+    font-size: .8em;
+  }
+  /* line 490, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .contact {
+    height: auto !important;
+  }
+  /* line 492, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldip/public/stylesheets/globalSCSS/../contents/resume.scss */
+  .resume .contact .contact-title {
+    text-align: center;
+  }
+}

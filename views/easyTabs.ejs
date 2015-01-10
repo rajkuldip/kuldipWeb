@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <% include partials/templates/head.ejs %>
+</head>
+<body ng-app="kuldipWeb" class='<%= className%>'>
+	    <% include partials/templates/menu.ejs %>
+        <div ng-controller='easyTabHead'>
+	        <% include partials/templates/home.ejs %>
+        </div>
+        <div ng-controller="easyTabs">
+        	<% include partials/templates/infoTemplate.ejs %>
+        </div>
+        <% include partials/contents/easyTabContent.ejs %>
+        <% include partials/templates/commentsTemplate.ejs %>
+        <% include partials/templates/footer.ejs %>
+        <% include partials/templates/defaultjs.ejs %>
+
+</body>
+</html>

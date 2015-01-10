@@ -1,0 +1,26 @@
+<div class="container">
+	<div class="experience-title">
+		<h2><span>{{fieldHeader}}</span></h2>
+	</div>
+	<div class="experience-data">
+		<ul>
+		    <li ng-repeat="dataValue in dataset">
+		    	<div class="clearfix experience-info">
+		    		<div class="logo">
+		    			<span class="{{dataValue.iconClassName}}"></span>
+		    		</div>
+		    		<div class="job-list">
+		    			<p class="company-name">
+		    				{{dataValue.field}}
+		    			</p>
+		    			<p class="designation">{{dataValue.degree}}</p>
+		    			<p class="duration">{{dataValue.duration}}</p>
+		    		</div>
+		    		<div class="company-info">
+		    			<p>{{dataValue.content}}</p>
+		    		</div>
+		    	</div>
+		    </li>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,87 @@
+.easyInputContainer .custom-dd-container {
+	display: block;
+	width: 90%;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	position: relative;
+}
+.easyInputContainer .dd-select-show {
+	display: block;
+	height: 12px;
+	margin: 0;
+	border: 1px solid #fff;
+	background: #fff;
+	position: relative;
+	padding: 15px;
+	font-size: .9em;
+	box-shadow: 0px 1px 5px 0 rgba(0,0,0,.2);
+	z-index: 2;
+}
+.easyInputContainer .dd-select-show:hover {
+	box-shadow: 3px 3px 10px -6px #000;
+}
+.easyInputContainer .dd-select-show:before {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 1px;
+	top: 7px;
+	bottom: 7px;
+	background: #C2973C;
+	right: 15%;
+	box-shadow: 1px 0 1px 1px rgba(255,255,255,.5);
+}
+.easyInputContainer .dd-select-show:after {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #C2973C;
+	top: 46%;
+	right: 20px;
+}
+.easyInputContainer .dd-select-list {
+	display: block;
+	position: absolute;
+	padding-top: 0px;
+	top: 100%;
+	transition: all .2s;
+	transform: scaleY(0);
+	transform-origin: top;
+	z-index: 1;
+	box-shadow: 6px 6px 12px -6px rgba(0,0,0,.2);
+	left: 5px;
+	right: 5px;
+}
+.easyInputContainer .dd-select-list .dd-list {
+	display: block;
+	border: 1px solid #ffffff;
+	background: #C2973C;
+	opacity: 1;
+	position: relative;
+	z-index: 1;
+	font-size: .8em;
+	padding: 0px;
+	overflow-y: scroll;
+	max-height: 200px;
+	color: #333;
+	border-top: 0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.easyInputContainer .show .dd-select-list {
+	transform: scaleY(1);
+}
+.easyInputContainer .dd-select-list li {
+	display: block;
+	padding: 10px;
+	border-bottom: 1px dotted rgba(255, 255, 255, .2);
+}
+.easyInputContainer .dd-select-list li:hover {
+	background-color: #ffffff;
+	color: #C2973C;
+}

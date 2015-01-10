@@ -1,0 +1,29 @@
+.footer {
+	padding: 15px 80px;
+	background: #463B47;
+	position: relative;
+	font-family: "Open Sans", Helvetica, Arial;
+	.container {
+		text-align: center;
+	}
+	.main {
+		display: inline-block;
+		li {
+			float: left;
+			margin: 0 20px;
+			a {
+				color: #fff;
+				text-decoration: none;
+				font-size: .8em;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+@media (max-width:767px) {
+	.footer {
+		padding: 15px;
+		text-align: center;
+		font-size: .85em;
+	}
+}

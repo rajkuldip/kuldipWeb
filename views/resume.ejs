@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include partials/templates/head.ejs %>
+</head>
+<body ng-app="kuldipWeb" class='<%= className%>'>
+    <div class="container clearfix">
+        <div class="resume-menu">
+            <div class="mobile-menu">
+                <span class="title">Kuldip Raj</span>
+                <a class="fa fa-navicon" href="#"></a>
+                <a class="fa fa-times-circle hide" href="#"></a>
+            </div>
+            <div class="menu-container">
+                <h2><span class="fa fa-newspaper-o"></span>Contents</h2>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li class="show"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-data">
+            <div class="main-container">
+                <% include partials/resume/home.ejs %>
+                <% include partials/resume/about.ejs %>
+                <% include partials/resume/skills.ejs %>
+                <section class="topic experience dark" id="experience" ng-controller="experienceController">
+                    <% include partials/resume/detailTemplate.ejs %>
+                </section>
+                <section class="topic projects" id="projects" ng-controller="projectController">
+                    <% include partials/resume/detailTemplate.ejs %>
+                </section>
+                <section class="topic education dark" id="education" ng-controller="educationController">
+                    <% include partials/resume/detailTemplate.ejs %>
+                </section>
+                <% include partials/resume/contact.ejs %>
+            </div>
+        </div>
+    </div>
+    <% include partials/templates/defaultjs.ejs %>
+</body>
+</html>

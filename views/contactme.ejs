@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include partials/templates/head.ejs %>
+</head>
+<body ng-app="kuldipWeb" class='<%= className%>'>
+    <% include partials/templates/menu.ejs %>
+    <div ng-controller='headContactMe' class="dark">
+        <% include partials/templates/home.ejs %>
+    </div>
+    <div class="container">
+        <div class="send-message">
+            <h2>Contact Me</h2>
+            <ul class="message">
+                <li><label><input id="name" value='' type="text" placeholder="Name"></input></label></li>
+                <li><label><input id="email" value='' type="email" placeholder="Email"></input></label></li>
+                <li><label><input id="website" value='' type="text" placeholder="Website"></input></label></li>
+                <li><label><textarea id="message" value='' placeholder="Message"></textarea></label></li>
+                <a href="#" class="send-button"><span>Send</span></a>
+            </ul>
+            <div class="contact-details">
+                <p class="details">You can also mail me at <span>kuldipinfotech@gmail.com</span></p>
+                <ul class="social-list clearfix">
+                    <li class="twitter"><a class="fa fa-twitter" href="#"></a></li>
+                    <li class="linkedIn"><a class="fa fa-linkedin" href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact-quote">
+            <p>You've got to ask! Asking is, in my opinion, the world's most powerful - and neglected - secret to success and happiness.
+            <span>~ Percy Ross</span></p>
+        </div>
+    </div>
+    <% include partials/templates/footer.ejs %>
+    <% include partials/templates/defaultjs.ejs %>
+
+</body>
+</html>
