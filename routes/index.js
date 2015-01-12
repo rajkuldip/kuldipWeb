@@ -42,7 +42,7 @@ router.get('/showComment', function (req, res) {
 	commentList = [];
 	comments = 0;
 	db.posts.find(function (err, post) {
-		res.send('sent');
+		res.send(post.length);
 	})
 });
 
