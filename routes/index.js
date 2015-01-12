@@ -41,20 +41,20 @@ router.get('/postComment', function (req, res) {
 router.get('/showComment', function (req, res) {
 	commentList = [];
 	comments = 0;
-	res.send('sent')
-	/*db.posts.find(function (err, post) {
+	db.posts.find(function (err, post) {
 		if (err) {
 			console.log(err);
 			res.end('Internal Server error occured!');
 		} else {
-			for (comments = 0; comments < post.length; comments++) {
+			/*for (comments = 0; comments < post.length; comments++) {
 				commentList.push({
 					'name': post[comments].name,
 					'date': post[comments].saveDate,
 					'comments': post[comments].comments
 				});
 			}
-			res.status('sent').send(commentList);
+			res.status('sent').send(commentList);*/
+			res.send('sent')
 		}
 	})
 */});
