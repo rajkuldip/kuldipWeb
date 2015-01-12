@@ -53,7 +53,7 @@ router.get('/showComment', function (req, res) {
 					'comments': post[comments].comments
 				});
 			}
-			res.send('hello');
+			res.send(commentList);
 		}
 	})
 });
