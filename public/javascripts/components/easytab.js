@@ -89,9 +89,7 @@ app.controller('easyTabComments', function ($scope, $http) {
 	$scope.list = function () {
 		$http.get( "/showComment").success(function (data) {
 			console.log(data)
-			/*$scope.comments = data;
-		}).error(function (data) {
-			console.log(data)*/
+			$scope.comments = data;
 		});
 	}
 	$scope.list();
