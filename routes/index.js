@@ -49,7 +49,7 @@ router.get('/showComment', function (req, res) {
 			for (comments = 0; comments < post.length; comments++) {
 				commentList.push({
 					'name': post[comments].name,
-					'date': moment(post[comments].saveDate).fromNow(),
+					'date': post[comments].saveDate,
 					'comments': post[comments].comments
 				});
 			}
