@@ -1,7 +1,7 @@
 var express = require('express');
 var moment = require('moment');
 var router = express.Router();
-var db = require('mongojs').connect('mongodb://kuldipweb:25@December@ds031611.mongolab.com:31611/heroku_app33150239', ['posts']);
+var db = require('mongojs').connect('mongodb://kuldipweb:showcommentdb@ds031611.mongolab.com:31611/heroku_app33150239', ['posts']);
 var comments = 0, commentList = [];
 
 // post a comment
