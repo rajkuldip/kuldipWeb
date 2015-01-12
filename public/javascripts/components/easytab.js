@@ -71,7 +71,7 @@ app.controller('easyTabComments', function ($scope, $http) {
 		} else {
 			errorMessage.removeClass('error').text('');
 		}
-        $.get( "http://localhost:3000/postComment", messageInfo).done(function (data) {
+        $.get( "/postComment", messageInfo).done(function (data) {
         	$($event.currentTarget).removeAttr('disabled');
         	if (data=="sent") {
         		errorMessage.removeClass('error').addClass('success').text('Your comment has been posted!');
@@ -87,7 +87,7 @@ app.controller('easyTabComments', function ($scope, $http) {
 
 	//To show comment
 	$scope.list = function () {
-		$http.get( "http://localhost:3000/showComment").success(function (data) {
+		$http.get( "/showComment").success(function (data) {
 			$scope.comments = data;
 		});
 	}
