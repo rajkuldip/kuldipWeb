@@ -42,12 +42,7 @@ router.get('/showComment', function (req, res) {
 	commentList = [];
 	comments = 0;
 	db.posts.find(function (err, post) {
-		if (err) {
-			console.log(err);
-			res.end('Internal Server error occured!');
-		} else {
-			res.status('sent').send(post.length);
-		}
+		res.status('sent').send(post.length);
 	})
 });
 
