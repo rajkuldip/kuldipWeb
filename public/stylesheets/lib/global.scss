@@ -1,6 +1,36 @@
 img, span, i, a {
 	display: inline-block;
 }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/fonts/opensans/OpenSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans light';
+  src: url("/fonts/opensans/OpenSans-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("/fonts/opensans/OpenSans-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'monospace';
+  src: url("/fonts/Monospace/MonospaceTypewriter.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'basic title font';
+  src: url("/fonts/basictitlefont.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
 	font-family: 'Open Sans', Helvetica, Arial;
 	font-size: 16px;
