@@ -47,7 +47,7 @@ router.get('/showComment', function (req, res) {
 			console.log(err);
 			res.end('Internal Server error occured!');
 		} else {
-			res.send('sent')
+			res.status('sent').send(post.length);
 		}
 	})
 });
