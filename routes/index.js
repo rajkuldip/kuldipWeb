@@ -41,7 +41,8 @@ router.get('/postComment', function (req, res) {
 router.get('/showComment', function (req, res) {
 	commentList = [];
 	comments = 0;
-	db.posts.find(function (err, post) {
+	res.send('sent')
+	/*db.posts.find(function (err, post) {
 		if (err) {
 			console.log(err);
 			res.end('Internal Server error occured!');
@@ -56,7 +57,7 @@ router.get('/showComment', function (req, res) {
 			res.status('sent').send(commentList);
 		}
 	})
-});
+*/});
 
 /* GET home page. */
 router.get('/', function(req, res) {
