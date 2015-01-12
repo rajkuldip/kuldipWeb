@@ -54,7 +54,7 @@ router.get('/showComment', function (req, res) {
 				});
 			}
 			res.statusCode(200);
-			res.send(commentList.toString());
+			res.send('hello');
 		}
 	})
 });
