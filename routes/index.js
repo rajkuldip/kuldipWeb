@@ -41,7 +41,6 @@ router.get('/postComment', function (req, res) {
 router.get('/showComment', function (req, res) {
 	commentList = [];
 	comments = 0;
-	res.send('sent')
 	db.posts.find(function (err, post) {
 		if (err) {
 			console.log(err);
