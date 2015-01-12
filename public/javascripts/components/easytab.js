@@ -91,8 +91,8 @@ app.controller('easyTabComments', function ($scope, $http) {
 			console.log(data)
 			/*$scope.comments = data;
 		}).error(function (data) {
-			console.log(data)
-		});*/
+			console.log(data)*/
+		});
 	}
 	$scope.list();
 });
