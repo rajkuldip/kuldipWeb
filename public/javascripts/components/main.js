@@ -42,7 +42,7 @@ app.controller('easyTabs', function ($scope) {
 
 app.controller('recentEasyTabPost', function ($scope, $http) {
 	$scope.list = function () {
-		$http.get( "http://localhost:3000/showComment").success(function (data) {
+		$http.get( "/showComment").success(function (data) {
 			$scope.comments = data.length;
 		});
 	}
