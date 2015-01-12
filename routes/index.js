@@ -53,7 +53,6 @@ router.get('/showComment', function (req, res) {
 					'comments': post[comments].comments
 				});
 			}
-			res.statusCode(200);
 			res.send('hello');
 		}
 	})
