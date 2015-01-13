@@ -33,15 +33,18 @@ app.controller('queryController', function () {
 	        website : $.trim($("#website").val()),
 	        message : $.trim($("#message").val())
 		}
-
-        $.get( "/sendQuery", messageInfo).done(function (data) {
-        	if (data=="sent") {
-            	$("#confirmation").empty().html("Your query/request/suggestion has been sent.").addClass('success').removeClass('error');
-            	$('.send-message').find('input[type=text], textarea').val('');
-        	} else {
-        		$("#confirmation").empty().html("Please Fill subject and message field.").addClass('error').removeClass('success');
-        	}
-		});
+		if (messageInfo.name != '' && messageInfo.email != '' && messageInfo.message != '' ) {
+	        $.get( "/sendQuery", messageInfo).done(function (data) {
+	        	if (data=="sent") {
+	            	$("#confirmation").empty().html("Your query/request/suggestion has been sent.").addClass('success').removeClass('error');
+	            	$('.send-message').find('input[type=text], textarea').val('');
+	        	} else {
+	        		$("#confirmation").empty().html("Please Fill required fields.").addClass('error').removeClass('success');
+	        	}
+			});
+	    } else {
+	    	$("#confirmation").empty().html("Please Fill required fields.").addClass('error').removeClass('success');
+	    }
 	};
 
 	this.cancel = function () {

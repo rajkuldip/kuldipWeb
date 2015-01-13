@@ -19,11 +19,35 @@
 			}
 		}
 	}
+	.social-share {
+		position: absolute;
+		right: 0;
+		top: 10px;
+		width: 100px;
+		a {
+			color: #ffffff;
+			float: left;
+			padding: 5px;
+			border: 1px solid rgb(255, 255, 255);
+			border-radius: 50%;
+			margin-right: 10px;
+			text-decoration: none;
+			&:hover {
+				color: #463B47;
+				background: #fff;
+			}
+		}
+	}
 }
 @media (max-width:767px) {
 	.footer {
 		padding: 15px;
 		text-align: center;
 		font-size: .85em;
+		height: 43px;
+		.social-share {
+			position: relative;
+			left: 43%;
+		}
 	}
 }

@@ -4,7 +4,7 @@ var router = express.Router();
 var db = require('mongojs').connect('mongodb://kuldipweb:showcommentdb@ds031611.mongolab.com:31611/heroku_app33150239', ['posts']);
 var nodemailer = require('nodemailer');
 var smtpTransport = nodemailer.createTransport("SMTP",{
-   host: "mail.gandi.net",
+   service: "GandiMail",
    auth: {
        user: "query@kuldipraj.com",
        pass: "22@SendQuery"
@@ -74,8 +74,9 @@ router.get('/sendQuery', function (req, res) {
 	if (isMessageAvailable && isNameAvailable && isEmailAvailable) {
 		var subject = req.query.name+ '[ email: ' +req.query.email+ ', website: '+req.query.website+']' + ' has sent you Message';
 		smtpTransport.sendMail({
-	   		from: 'query@kuldipraj.com', // sender address
-	   		to:'kuldipinfotech@gmail.com',
+	   		from:'query@kuldipraj.com', // sender address
+	   		to:'kuldip@kuldipraj.com',
+	   		//cc:'kuldipinfotech@gmail.com',
 	   		subject: subject, // Subject line
 	   		text: req.query.message // plaintext body
 			}, function(error, response){
