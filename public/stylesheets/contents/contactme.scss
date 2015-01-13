@@ -198,6 +198,11 @@
 					box-shadow: none;
 					margin-left: 0;
 					text-align: left;
+					> h3 {
+						left: 15px;
+						width: 80%;
+						top: auto;
+					}
 					li {
 						padding: 20px 0;
 						input[type=text], input[type=email], textarea {
