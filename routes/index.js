@@ -2,6 +2,15 @@ var express = require('express');
 var moment = require('moment');
 var router = express.Router();
 var db = require('mongojs').connect('mongodb://kuldipweb:showcommentdb@ds031611.mongolab.com:31611/heroku_app33150239', ['posts']);
+var nodemailer = require('nodemailer');
+var smtpTransport = nodemailer.createTransport("SMTP",{
+   host: "mail.gandi.net",
+   port: 465,
+   auth: {
+       user: "query@kuldipraj.com",
+       pass: "22@SendQuery"
+   }
+});
 var comments = 0, commentList = [];
 
 // post a comment
@@ -56,6 +65,34 @@ router.get('/showComment', function (req, res) {
 			res.send(commentList);
 		}
 	})
+});
+
+// Send Query
+router.get('/sendQuery', function (req, res) {
+	var isNameAvailable = (req.query.name == undefined || req.query.name == '') ? false : true;;
+	var isEmailAvailable = (req.query.email == undefined || req.query.email == '') ? false : true;;
+	var isMessageAvailable = (req.query.message == undefined || req.query.message == '') ? false : true;
+	if (isMessageAvailable && isNameAvailable && isEmailAvailable) {
+		var subject = req.query.name+ '[ email: ' +req.query.email+ ', website: '+req.query.website+']' + ' has sent you Message';
+		smtpTransport.sendMail({
+	   		from: 'query@kuldipraj.com', // sender address
+	   		to:'kuldipinfotech@gmail.com',
+	   		subject: subject, // Subject line
+	   		text: req.query.message // plaintext body
+			}, function(error, response){
+	   			if(error){
+	       			console.log('error:' + error);
+	       			res.end('error');
+	   			}else{
+	       			console.log("Message sent: " + response.message);
+	       			res.end('sent');
+	   			}
+			}
+		);
+	} else {
+		res.end('error');
+		res.send('Wrong url');
+	}
 });
 
 /* GET home page. */

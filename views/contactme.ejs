@@ -9,14 +9,15 @@
         <% include partials/templates/home.ejs %>
     </div>
     <div class="container">
-        <div class="send-message">
+        <div class="send-message" ng-controller="queryController as query">
             <h2>Contact Me</h2>
+            <h3 id="confirmation" class="confirmation"></h3>
             <ul class="message">
                 <li><label><input id="name" value='' type="text" placeholder="Name"></input></label></li>
                 <li><label><input id="email" value='' type="email" placeholder="Email"></input></label></li>
                 <li><label><input id="website" value='' type="text" placeholder="Website"></input></label></li>
                 <li><label><textarea id="message" value='' placeholder="Message"></textarea></label></li>
-                <a href="#" class="send-button"><span>Send</span></a>
+                <button class="send-button" ng-click='query.sendQuery()'><span>Send</span></a>
             </ul>
             <div class="contact-details">
                 <p class="details">You can also mail me at <span>kuldipinfotech@gmail.com</span></p>
