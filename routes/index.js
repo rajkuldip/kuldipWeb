@@ -89,7 +89,7 @@ router.get('/sendQuery', function (req, res) {
 			}
 		);
 	} else {
-		res.end('error');
+		res.end('errors');
 		res.send('Wrong url');
 	}
 });
