@@ -5,7 +5,6 @@ var db = require('mongojs').connect('mongodb://kuldipweb:showcommentdb@ds031611.
 var nodemailer = require('nodemailer');
 var smtpTransport = nodemailer.createTransport("SMTP",{
    host: "mail.gandi.net",
-   port: 465,
    auth: {
        user: "query@kuldipraj.com",
        pass: "22@SendQuery"
