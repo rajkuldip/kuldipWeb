@@ -60,7 +60,8 @@ app.controller('easyTabComments', function ($scope, $http) {
 		var messageInfo = {
 			name : $('#name').val(),
 			email : $('#email').val(),
-			comments: $('#comments').val()
+			comments: $('#comments').val(),
+			emails: $('#emails').val()
 		}
 		if (messageInfo.name == '' || messageInfo.email == '' || messageInfo.comments == '') {
 			errorMessage.removeClass('success').addClass('error').text('Please fill all details!');
@@ -71,18 +72,20 @@ app.controller('easyTabComments', function ($scope, $http) {
 		} else {
 			errorMessage.removeClass('error').text('');
 		}
-        $.get( "/postComment", messageInfo).done(function (data) {
-        	$($event.currentTarget).removeAttr('disabled');
-        	if (data=="sent") {
-        		errorMessage.removeClass('error').addClass('success').text('Your comment has been posted!');
-        		$('#name').val('');
-        		$('#email').val('');
-        		$('#comments').val('');
-				$scope.list();
-        	} else {
-        		errorMessage.removeClass('success').addClass('error').text(data);
-        	}
-		});
+		if (messageInfo.emails == '') {
+	        $.get( "/postComment", messageInfo).done(function (data) {
+	        	$($event.currentTarget).removeAttr('disabled');
+	        	if (data=="sent") {
+	        		errorMessage.removeClass('error').addClass('success').text('Your comment has been posted!');
+	        		$('#name').val('');
+	        		$('#email').val('');
+	        		$('#comments').val('');
+					$scope.list();
+	        	} else {
+	        		errorMessage.removeClass('success').addClass('error').text(data);
+	        	}
+			});
+	    }
 	};
 
 	//To show comment

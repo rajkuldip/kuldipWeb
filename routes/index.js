@@ -22,26 +22,28 @@ router.get('/postComment', function (req, res) {
 			return true;
 		}
 	}
-	if (req.query.name == '' || req.query.email == '' || req.query.comments == '') {
-		res.end('Please fill all details');
-	} else if (!verifyEmail(req.query.email)) {
-		res.end('Please enter valid email!');
-	} else {
-		var postComment = {
-			name : req.query.name,
-			email : req.query.email,
-			comments: req.query.comments,
-			date : moment().format('DD/MM/YYYY'),
-			saveDate: moment().format()
-		};
-		db.posts.save(postComment, function (err, post) {
-			if (err) {
-				console.log(err);
-				res.end('Internal Server error occured!');
-			} else {
-				res.end('sent');
-			}
-		})
+	if (req.query.emails == '') {
+		if (req.query.name == '' || req.query.email == '' || req.query.comments == '') {
+			res.end('Please fill all details');
+		} else if (!verifyEmail(req.query.email)) {
+			res.end('Please enter valid email!');
+		} else {
+			var postComment = {
+				name : req.query.name,
+				email : req.query.email,
+				comments: req.query.comments,
+				date : moment().format('DD/MM/YYYY'),
+				saveDate: moment().format()
+			};
+			db.posts.save(postComment, function (err, post) {
+				if (err) {
+					console.log(err);
+					res.end('Internal Server error occured!');
+				} else {
+					res.end('sent');
+				}
+			})
+		}
 	}
 });
 

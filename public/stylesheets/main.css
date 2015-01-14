@@ -742,6 +742,10 @@ body .home {
   position: relative;
 }
 /* line 61, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+.comment-section .post-comments .postTitle .emails {
+  display: none;
+}
+/* line 64, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
 .comment-section .post-comments .postTitle input {
   width: 300px;
   height: 25px;
@@ -750,7 +754,7 @@ body .home {
   font-size: 80%;
   margin-right: 20px;
 }
-/* line 69, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+/* line 72, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
 .comment-section .post-comments .postTitle .submit {
   position: absolute;
   right: 15px;
@@ -760,19 +764,19 @@ body .home {
   color: #463B47;
   border: 1px solid #463B47;
 }
-/* line 77, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+/* line 80, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
 .comment-section .post-comments .postTitle .submit span {
   padding: 8px 20px;
   text-transform: uppercase;
   transition: all .3s;
   -webkit-transition: all .3s;
 }
-/* line 83, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+/* line 86, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
 .comment-section .post-comments .postTitle .submit:hover {
   background: #463B47;
   color: #ffffff;
 }
-/* line 89, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+/* line 92, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
 .comment-section .post-comments .postMsg {
   position: absolute;
   top: 28px;
@@ -783,23 +787,23 @@ body .home {
   transition: all .2s;
   transform: scale(0);
 }
-/* line 98, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+/* line 101, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
 .comment-section .post-comments .postMsg.success {
   transform: scale(1);
   background: #161;
 }
-/* line 102, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+/* line 105, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
 .comment-section .post-comments .postMsg.error {
   transform: scale(1);
   background: #911;
 }
-/* line 107, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+/* line 110, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
 .comment-section .post-comments .postContent {
   display: block;
   height: 100px;
   position: relative;
 }
-/* line 111, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+/* line 114, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
 .comment-section .post-comments .postContent textarea {
   display: block;
   width: 100%;
@@ -810,31 +814,31 @@ body .home {
 }
 
 @media (max-width: 767px) {
-  /* line 123, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+  /* line 126, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
   .comment-section {
     padding: 20px;
   }
-  /* line 125, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+  /* line 128, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
   .comment-section .mainTitle {
     font-size: 1.3em;
     margin-bottom: 40px;
   }
-  /* line 129, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+  /* line 132, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
   .comment-section .commentContent {
     line-height: 1.3em;
   }
-  /* line 133, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+  /* line 136, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
   .comment-section .post-comments .postTitle {
     height: auto;
   }
-  /* line 135, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+  /* line 138, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
   .comment-section .post-comments .postTitle input {
     width: 88%;
     margin-bottom: 5px;
     padding: 5px 15px;
     margin-right: 0;
   }
-  /* line 141, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+  /* line 144, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
   .comment-section .post-comments .postTitle .submit {
     width: 88%;
     padding: 0 15px;
@@ -843,7 +847,7 @@ body .home {
     top: 0;
     right: 0;
   }
-  /* line 150, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+  /* line 153, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
   .comment-section .post-comments .postMsg {
     font-size: .85em;
     top: 38px;
