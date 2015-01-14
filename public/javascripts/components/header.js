@@ -10,11 +10,18 @@ var homeBannerHeight = (function (window, undefined) {
 		})
 	}
 	function _initializeHeight (argument) {
-		var winHeight = $(window).height();
-		if (winHeight < 768) {
+		var winHeight = $(window).height(),
+			winWidth = $(window).width();
+		if (winWidth < 768) {
 			$('body .home').css({
 				'height': winHeight + 50
-			})
+			});
+			$('.parallax-window').css({
+				'height': winHeight
+			});
+		} else {
+			$('body .home').removeAttr('style');
+			$('.parallax-window').removeAttr('style');
 		}
 	}
 	function _init (argument) {

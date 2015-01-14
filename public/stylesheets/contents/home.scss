@@ -30,6 +30,10 @@ body .home {
 .dark .home .container:after {
 	border-right: 1500px solid #463B47;
 }
+.parallax-window {
+    min-height: 100%;
+    background: transparent;
+}
 @media (max-width:767px) {
 	body .home {
 		height: 50%;

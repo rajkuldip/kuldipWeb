@@ -280,8 +280,14 @@ body .home {
   border-right: 1500px solid #463B47;
 }
 
+/* line 33, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
+.parallax-window {
+  min-height: 100%;
+  background: transparent;
+}
+
 @media (max-width: 767px) {
-  /* line 34, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
+  /* line 38, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
   body .home {
     height: 50%;
   }

@@ -23,6 +23,7 @@
 				background: #fff;
 				padding: 30px;
 				text-align: left;
+				position: relative;
 				h3 {
 					left: 50px;
 					position: absolute;
@@ -33,7 +34,7 @@
 					width: 320px;
 					text-align: center;
 					&.error {
-						background: #006100;
+						background: #610000;
 					}
 					&.success {
 						background: #006100;
