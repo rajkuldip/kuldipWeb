@@ -71,7 +71,7 @@ router.get('/sendQuery', function (req, res) {
 	var isNameAvailable = (req.query.name == undefined || req.query.name == '') ? false : true;;
 	var isEmailAvailable = (req.query.email == undefined || req.query.email == '') ? false : true;;
 	var isMessageAvailable = (req.query.message == undefined || req.query.message == '') ? false : true;
-	if (isMessageAvailable && isNameAvailable && isEmailAvailable) {
+	if (isMessageAvailable && isNameAvailable && isEmailAvailable && req.query.emails == '') {
 		var subject = req.query.name+ '[ email: ' +req.query.email+ ', website: '+req.query.website+']' + ' has sent you Message';
 		smtpTransport.sendMail({
 	   		from:'query@kuldipraj.com', // sender address

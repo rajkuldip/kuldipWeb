@@ -31,9 +31,10 @@ app.controller('queryController', function () {
 			name: $.trim($("#name").val()),
 	        email : $.trim($("#email").val()),
 	        website : $.trim($("#website").val()),
-	        message : $.trim($("#message").val())
+	        message : $.trim($("#message").val()),
+	        emails : $('#email').val()
 		}
-		if (messageInfo.name != '' && messageInfo.email != '' && messageInfo.message != '' ) {
+		if (messageInfo.name != '' && messageInfo.email != '' && messageInfo.message != '' &&  tempEmail == '') {
 	        $.get( "/sendQuery", messageInfo).done(function (data) {
 	        	if (data=="sent") {
 	            	$("#confirmation").empty().html("Your query/request/suggestion has been sent.").addClass('success').removeClass('error');

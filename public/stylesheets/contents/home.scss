@@ -3,6 +3,33 @@ body .home {
 	width: 100%;
 	overflow: hidden;
 }
+.home-info {
+	display: none;
+}
+.aboutMePage .home-info {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 80px;
+	width: 400px;
+	margin-left: 45%;
+	text-align: center;
+	text-shadow: 0px 0 20px rgba(255,255,255,.5);
+	color: #000;
+	> .info-1 {
+		display: inline-block;
+		font-size: 40px;
+		font-family: "code light", Helvetica, Arial;
+		line-height: 1.5em;
+		width: 210px;
+	}
+	> .main-title {
+		display: inline-block;
+		font-size: 70px;
+		font-family: "code bold", Helvetica, Arial;
+		margin-top: 10px;
+	}
+}
 .home .container > img {
 	height: 100%;
 	display: block;
@@ -37,5 +64,8 @@ body .home {
 @media (max-width:767px) {
 	body .home {
 		height: 50%;
+	}
+	.aboutMePage .home-info {
+		display: none;
 	}
 }

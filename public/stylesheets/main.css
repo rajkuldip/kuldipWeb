@@ -244,18 +244,51 @@ body .home {
 }
 
 /* line 6, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
+.home-info {
+  display: none;
+}
+
+/* line 9, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
+.aboutMePage .home-info {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 80px;
+  width: 400px;
+  margin-left: 45%;
+  text-align: center;
+  text-shadow: 0px 0 20px rgba(255, 255, 255, 0.5);
+  color: #000;
+}
+/* line 19, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
+.aboutMePage .home-info > .info-1 {
+  display: inline-block;
+  font-size: 40px;
+  font-family: "code light", Helvetica, Arial;
+  line-height: 1.5em;
+  width: 210px;
+}
+/* line 26, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
+.aboutMePage .home-info > .main-title {
+  display: inline-block;
+  font-size: 70px;
+  font-family: "code bold", Helvetica, Arial;
+  margin-top: 10px;
+}
+
+/* line 33, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
 .home .container > img {
   height: 100%;
   display: block;
 }
 
-/* line 10, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
+/* line 37, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
 .home .container {
   height: 100%;
   position: relative;
 }
 
-/* line 14, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
+/* line 41, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
 .home .container:before {
   content: '';
   position: absolute;
@@ -265,7 +298,7 @@ body .home {
   border-right: 1500px solid #E06959;
 }
 
-/* line 22, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
+/* line 49, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
 .home .container:after {
   content: '';
   position: absolute;
@@ -275,21 +308,26 @@ body .home {
   border-right: 1500px solid #ffffff;
 }
 
-/* line 30, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
+/* line 57, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
 .dark .home .container:after {
   border-right: 1500px solid #463B47;
 }
 
-/* line 33, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
+/* line 60, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
 .parallax-window {
   min-height: 100%;
   background: transparent;
 }
 
 @media (max-width: 767px) {
-  /* line 38, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
+  /* line 65, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
   body .home {
     height: 50%;
+  }
+
+  /* line 68, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/home.scss */
+  .aboutMePage .home-info {
+    display: none;
   }
 }
 /* line 1, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/mainInfo.scss */
@@ -997,8 +1035,9 @@ body .home {
   background: #fff;
   padding: 30px;
   text-align: left;
+  position: relative;
 }
-/* line 26, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 27, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message > ul h3 {
   left: 50px;
   position: absolute;
@@ -1009,19 +1048,19 @@ body .home {
   width: 320px;
   text-align: center;
 }
-/* line 35, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 36, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message > ul h3.error {
-  background: #006100;
+  background: #610000;
 }
-/* line 38, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 39, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message > ul h3.success {
   background: #006100;
 }
-/* line 43, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 44, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message > ul > li {
   padding: 20px 20px 10px;
 }
-/* line 45, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 46, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message > ul > li input[type=text], .contactMePage > .container .send-message > ul > li input[type=email], .contactMePage > .container .send-message > ul > li textarea {
   width: 320px;
   height: 25px;
@@ -1031,11 +1070,15 @@ body .home {
   background: rgba(91, 76, 92, 0.26);
   font-size: .85em;
 }
-/* line 54, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 55, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message > ul > li textarea {
   height: 100px;
 }
 /* line 58, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+.contactMePage > .container .send-message > ul > li.emails {
+  display: none;
+}
+/* line 62, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message > ul .send-button {
   margin-left: 20px;
   margin-top: 20px;
@@ -1046,16 +1089,16 @@ body .home {
   transition: all .3s;
   -webkit-transition: all .3s;
 }
-/* line 67, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 71, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message > ul .send-button span {
   padding: 8px 20px;
 }
-/* line 70, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 74, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message > ul .send-button:hover {
   background: #463B47;
   color: #ffffff;
 }
-/* line 76, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 80, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message .contact-details {
   padding: 0;
   position: absolute;
@@ -1063,7 +1106,7 @@ body .home {
   right: 25%;
   text-align: center;
 }
-/* line 82, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 86, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message .contact-details > h2 {
   font-size: 2.2em;
   text-transform: uppercase;
@@ -1073,29 +1116,29 @@ body .home {
   border-bottom: 1px solid #E06959;
   display: inline-block;
 }
-/* line 91, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 95, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message .contact-details .details {
   font-size: 1.7em;
   line-height: 1.5em;
   margin-bottom: 50px;
 }
-/* line 95, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 99, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message .contact-details .details > span {
   display: block;
   font-size: .6em;
 }
-/* line 100, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 104, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message .contact-details > ul {
   width: 200px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 104, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 108, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message .contact-details > ul > li {
   margin: 0px 10px;
   display: inline-block;
 }
-/* line 107, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 111, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message .contact-details > ul > li .fa {
   position: relative;
   display: block;
@@ -1106,60 +1149,60 @@ body .home {
   transition: all .3s;
   -webkit-transition: all .3s;
 }
-/* line 116, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 120, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message .contact-details > ul > li .fa:before {
   position: absolute;
   top: 28%;
   left: 30%;
 }
-/* line 121, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 125, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message .contact-details > ul > li .fa.fa-twitter {
   border: 1px solid #469ae9;
   color: #469ae9;
 }
-/* line 125, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 129, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message .contact-details > ul > li .fa.fa-linkedin {
   border: 1px solid #1466a6;
   color: #1466a6;
 }
-/* line 129, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 133, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message .contact-details > ul > li .fa:hover {
   background: #463B47;
   color: #ffffff;
 }
-/* line 130, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 134, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message .contact-details > ul > li .fa:hover.fa-twitter {
   background: #469ae9;
 }
-/* line 133, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 137, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message .contact-details > ul > li .fa:hover.fa-linkedin {
   background: #1466a6;
 }
-/* line 143, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 147, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message ::-webkit-input-placeholder {
   color: #999;
 }
-/* line 147, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 151, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message :-moz-placeholder {
   /* Firefox 18- */
   color: #999;
 }
-/* line 151, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 155, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message ::-moz-placeholder {
   /* Firefox 19+ */
   color: #999;
 }
-/* line 155, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 159, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .send-message :-ms-input-placeholder {
   color: #999;
 }
-/* line 159, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 163, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .contact-quote {
   height: 200px;
   padding: 100px;
   text-align: center;
 }
-/* line 163, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 167, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .contact-quote > p {
   width: 500px;
   display: inline-block;
@@ -1168,7 +1211,7 @@ body .home {
   position: relative;
   color: #463B47;
 }
-/* line 170, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+/* line 174, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
 .contactMePage > .container .contact-quote > p > span {
   position: absolute;
   bottom: -50px;
@@ -1181,17 +1224,17 @@ body .home {
 }
 
 @media (max-width: 767px) {
-  /* line 188, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  /* line 192, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
   .contactMePage > .container .send-message {
     padding: 0;
   }
-  /* line 190, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  /* line 194, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
   .contactMePage > .container .send-message > h2 {
     font-size: 1.3em;
     line-height: 1.5em;
     margin: 0 0 30px;
   }
-  /* line 195, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  /* line 199, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
   .contactMePage > .container .send-message > ul {
     padding: 5%;
     width: auto;
@@ -1199,28 +1242,28 @@ body .home {
     margin-left: 0;
     text-align: left;
   }
-  /* line 201, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  /* line 205, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
   .contactMePage > .container .send-message > ul > h3 {
     left: 15px;
     width: 80%;
     top: auto;
   }
-  /* line 206, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  /* line 210, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
   .contactMePage > .container .send-message > ul li {
     padding: 20px 0;
   }
-  /* line 208, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  /* line 212, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
   .contactMePage > .container .send-message > ul li input[type=text], .contactMePage > .container .send-message > ul li input[type=email], .contactMePage > .container .send-message > ul li textarea {
     width: 89%;
   }
-  /* line 212, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  /* line 216, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
   .contactMePage > .container .send-message > ul .send-button {
     margin-left: 0;
     width: 100%;
     margin-top: 0;
     text-align: center;
   }
-  /* line 219, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  /* line 223, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
   .contactMePage > .container .send-message .contact-details {
     padding: 15px;
     position: relative;
@@ -1228,21 +1271,21 @@ body .home {
     right: auto;
     color: #ffffff;
   }
-  /* line 225, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  /* line 229, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
   .contactMePage > .container .send-message .contact-details .details {
     margin-bottom: 30px;
     font-size: 1.3em;
   }
-  /* line 231, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  /* line 235, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
   .contactMePage > .container .contact-quote {
     padding: 15px;
   }
-  /* line 233, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  /* line 237, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
   .contactMePage > .container .contact-quote > p {
     font-size: 1em;
     width: 100%;
   }
-  /* line 236, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  /* line 240, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
   .contactMePage > .container .contact-quote > p > span {
     bottom: -30px;
   }

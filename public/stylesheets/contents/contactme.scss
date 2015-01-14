@@ -55,6 +55,9 @@
 					textarea {
 						height: 100px;
 					}
+					&.emails {
+						display: none;
+					}
 				}
 				.send-button {
 					margin-left: 20px;
