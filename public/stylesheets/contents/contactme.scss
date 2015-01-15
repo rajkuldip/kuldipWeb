@@ -201,7 +201,7 @@
 					width: auto;
 					box-shadow: none;
 					margin-left: 0;
-					text-align: left;
+					text-align: center;
 					> h3 {
 						left: 15px;
 						width: 80%;
@@ -215,7 +215,7 @@
 					}
 					.send-button {
 						margin-left: 0;
-						width: 100%;
+						width: 94%;
 						margin-top: 0;
 						text-align: center;
 					}
@@ -233,13 +233,35 @@
 				}
 			}
 			.contact-quote {
-				padding: 15px;
+				padding: 50px 25px;
+				height: auto;
 				> p {
 					font-size: 1em;
 					width: 100%;
 					> span {
 						bottom: -30px;
 					}
+				}
+			}
+		}
+	}
+}
+@media (min-width:768px) and (max-width:1150px) {
+	.contactMePage {
+		> .container {
+			.send-message {
+				> ul {
+					text-align: center;
+				}
+				.contact-details {
+					background: #ffffff;
+					position: relative;
+					width: 74%;
+					margin-left: 10%;
+					margin-top: 70px;
+					box-shadow: 0 0 0px 20px rgba(255, 255, 255, 0.1);
+					right: auto;
+					padding: 30px;
 				}
 			}
 		}

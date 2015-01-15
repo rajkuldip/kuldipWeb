@@ -488,27 +488,29 @@ body .home {
 /* line 47, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
 .recentPosts .postlist .descriptionData {
   overflow: hidden;
+  position: relative;
 }
-/* line 49, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+/* line 50, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
 .recentPosts .postlist .descriptionData .imageContainer {
   float: left;
   width: 30%;
-  height: 200px;
   border: 1px solid #463B47;
   text-align: center;
   background: rgba(91, 76, 92, 0.26);
-  padding: 20px;
   position: relative;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }
-/* line 58, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+/* line 60, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
 .recentPosts .postlist .descriptionData .imageContainer img {
   height: 80%;
   box-shadow: 1px 0 7px 0 rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 25px;
-  left: 60px;
+  top: 30px;
+  left: 30px;
 }
-/* line 66, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+/* line 68, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
 .recentPosts .postlist .descriptionData > .postImage {
   width: 200px;
   height: 200px;
@@ -517,19 +519,18 @@ body .home {
   border: 1px solid #463B47;
   box-shadow: 0px 0px 8px 0px rgba(90, 89, 91, 0.5);
 }
-/* line 74, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+/* line 76, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
 .recentPosts .postlist .descriptionData .description {
   float: left;
-  width: 65%;
+  width: 70%;
   line-height: 1.5em;
   border: 1px solid #463B47;
-  margin-left: -1px;
-  height: 240px;
+  margin-left: 30%;
   background: #463B47;
   color: #fff;
   position: relative;
 }
-/* line 84, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+/* line 85, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
 .recentPosts .postlist .descriptionData .description:before {
   position: absolute;
   border-top: 20px solid transparent;
@@ -539,53 +540,70 @@ body .home {
   top: 42%;
   content: '';
 }
-/* line 93, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+/* line 94, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
 .recentPosts .postlist .descriptionData .description p {
-  padding: 48px 80px 48px 30px;
+  padding: 50px 50px 50px 30px;
+  overflow: hidden;
+  text-align: justify;
+}
+/* line 98, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+.recentPosts .postlist .descriptionData .description p span {
+  overflow: hidden;
+  height: 100%;
 }
 
+@media (min-width: 768px) and (max-width: 1165px) {
+  /* line 108, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  .recentPosts .postlist .descriptionData .description p {
+    padding: 30px 30px 30px 25px;
+    height: 81%;
+  }
+}
 @media (max-width: 767px) {
-  /* line 102, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  /* line 114, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
   .recentPosts {
     padding: 30px 15px;
   }
-  /* line 104, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  /* line 116, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
   .recentPosts h2.title {
     font-size: 1.2em;
     line-height: 1.5em;
   }
-  /* line 108, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  /* line 120, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
   .recentPosts .postlist {
     padding: 0;
   }
-  /* line 110, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  /* line 122, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
   .recentPosts .postlist h3.title {
     font-size: 1em;
   }
-  /* line 113, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  /* line 125, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
   .recentPosts .postlist .otherInfo span {
     margin-bottom: 10px;
   }
-  /* line 117, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  /* line 129, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
   .recentPosts .postlist .descriptionData .imageContainer {
     width: 99%;
     padding: 0;
+    position: relative;
+    height: 200px;
   }
-  /* line 120, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  /* line 134, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
   .recentPosts .postlist .descriptionData .imageContainer img {
     top: 10%;
     margin-top: 15px;
     position: static;
   }
-  /* line 126, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  /* line 140, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
   .recentPosts .postlist .descriptionData .description {
-    width: 100%;
+    width: 99%;
     padding: 0;
     height: auto;
+    margin: 0;
   }
-  /* line 130, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
+  /* line 145, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/recentPosts.scss */
   .recentPosts .postlist .descriptionData .description p {
-    padding: 10px;
+    padding: 20px;
   }
 }
 /* line 2, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
@@ -813,41 +831,47 @@ body .home {
   font-size: 100%;
 }
 
+@media (min-width: 768px) and (max-width: 910px) {
+  /* line 129, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+  .comment-section .post-comments .postTitle input {
+    width: 35%;
+  }
+}
 @media (max-width: 767px) {
-  /* line 126, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+  /* line 137, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
   .comment-section {
     padding: 20px;
   }
-  /* line 128, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+  /* line 139, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
   .comment-section .mainTitle {
     font-size: 1.3em;
     margin-bottom: 40px;
   }
-  /* line 132, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+  /* line 143, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
   .comment-section .commentContent {
     line-height: 1.3em;
   }
-  /* line 136, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+  /* line 147, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
   .comment-section .post-comments .postTitle {
     height: auto;
   }
-  /* line 138, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+  /* line 149, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
   .comment-section .post-comments .postTitle input {
-    width: 88%;
+    width: 91%;
     margin-bottom: 5px;
     padding: 5px 15px;
     margin-right: 0;
   }
-  /* line 144, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+  /* line 155, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
   .comment-section .post-comments .postTitle .submit {
-    width: 88%;
+    width: 91%;
     padding: 0 15px;
     text-align: center;
     position: relative;
     top: 0;
     right: 0;
   }
-  /* line 153, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
+  /* line 164, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/comments.scss */
   .comment-section .post-comments .postMsg {
     font-size: .85em;
     top: 38px;
@@ -1244,7 +1268,7 @@ body .home {
     width: auto;
     box-shadow: none;
     margin-left: 0;
-    text-align: left;
+    text-align: center;
   }
   /* line 205, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
   .contactMePage > .container .send-message > ul > h3 {
@@ -1263,7 +1287,7 @@ body .home {
   /* line 216, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
   .contactMePage > .container .send-message > ul .send-button {
     margin-left: 0;
-    width: 100%;
+    width: 94%;
     margin-top: 0;
     text-align: center;
   }
@@ -1282,16 +1306,34 @@ body .home {
   }
   /* line 235, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
   .contactMePage > .container .contact-quote {
-    padding: 15px;
+    padding: 50px 25px;
+    height: auto;
   }
-  /* line 237, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  /* line 238, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
   .contactMePage > .container .contact-quote > p {
     font-size: 1em;
     width: 100%;
   }
-  /* line 240, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  /* line 241, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
   .contactMePage > .container .contact-quote > p > span {
     bottom: -30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1150px) {
+  /* line 253, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  .contactMePage > .container .send-message > ul {
+    text-align: center;
+  }
+  /* line 256, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/contactme.scss */
+  .contactMePage > .container .send-message .contact-details {
+    background: #ffffff;
+    position: relative;
+    width: 74%;
+    margin-left: 10%;
+    margin-top: 70px;
+    box-shadow: 0 0 0px 20px rgba(255, 255, 255, 0.1);
+    right: auto;
+    padding: 30px;
   }
 }
 /* line 1, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/resume.scss */
