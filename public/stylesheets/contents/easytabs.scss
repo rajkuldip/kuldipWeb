@@ -18,6 +18,24 @@
 		p, h3, div {
 			margin-bottom: 20px;
 		}
+		.download {
+			background: #463B47;
+			padding: 5px 10px;
+			margin-left: 10px;
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: .8em;
+			box-shadow: inset 0px 0px 0px 2px rgba(255,255,255,.5);
+			border: 1px solid #ffffff;
+			transition: .3s all;
+			-webkit-transition: .3s all;
+			&:hover {
+				background: rgba(255,255,255,.5);
+				color: #463B47;
+				border: 1px solid #463B47;
+			}
+		}
 		h3 {
 			font-weight: 500;
 		}

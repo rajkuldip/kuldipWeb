@@ -631,14 +631,34 @@ body .home {
   margin-bottom: 20px;
 }
 /* line 21, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+.easyTabContainer .main-content .download {
+  background: #463B47;
+  padding: 5px 10px;
+  margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8em;
+  box-shadow: inset 0px 0px 0px 2px rgba(255, 255, 255, 0.5);
+  border: 1px solid #ffffff;
+  transition: .3s all;
+  -webkit-transition: .3s all;
+}
+/* line 33, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+.easyTabContainer .main-content .download:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #463B47;
+  border: 1px solid #463B47;
+}
+/* line 39, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
 .easyTabContainer .main-content h3 {
   font-weight: 500;
 }
-/* line 24, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+/* line 42, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
 .easyTabContainer .main-content .code-point {
   margin-bottom: 5px;
 }
-/* line 27, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+/* line 45, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
 .easyTabContainer .main-content .code {
   width: 90%;
   padding: 20px;
@@ -651,15 +671,15 @@ body .home {
   margin-bottom: 40px;
   font-family: monospace, Helvetica, Arial;
 }
-/* line 38, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+/* line 56, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
 .easyTabContainer .main-content .code strong {
   font-weight: 700;
 }
-/* line 41, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+/* line 59, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
 .easyTabContainer .main-content .code pre {
   white-space: pre-wrap;
 }
-/* line 45, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+/* line 63, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
 .easyTabContainer .main-content .file {
   padding: 0 5px;
   background: #eee;
@@ -671,15 +691,15 @@ body .home {
 }
 
 @media (max-width: 767px) {
-  /* line 58, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+  /* line 76, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
   .easyTabContainer {
     width: 100%;
   }
-  /* line 60, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+  /* line 78, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
   .easyTabContainer .main-content {
     padding: 50px 20px;
   }
-  /* line 63, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
+  /* line 81, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/easytabs.scss */
   .easyTabContainer .easyTabTitleImageContainer {
     padding: 20px 20px 0;
   }
