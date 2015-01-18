@@ -52,7 +52,7 @@ var gallery = {
 	{
 		"imgLink" : "/images/gallery/mirror.jpg",
 		"imgAlt": "Bike",
-		"imgCaption" : "She does love... herselves :)"
+		"imgCaption" : "She does love... herself :)"
 	},
 	{
 		"imgLink" : "/images/gallery/face.jpg",
