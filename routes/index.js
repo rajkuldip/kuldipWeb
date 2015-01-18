@@ -113,6 +113,9 @@ router.get('/aboutme', function(req, res) {
 router.get('/resume', function(req, res) {
   res.render('resume', { title: 'Kuldip Raj Website - My Resume', className: 'resume'  });
 });
+router.get('/personal/gallery', function(req, res) {
+  res.render('gallery', { title: 'Kuldip Raj Website - My Gallery', className: 'gallery'  });
+});
 router.get('/*', function(req, res) {
   res.render('error', { title: 'Kuldip Raj Website - Error Page', className: 'errorPage'  });
 });

@@ -1,11 +1,11 @@
+if (window.kuldipWeb == undefined)
+	window.kuldipWeb = {};
+
 var headHome = {
 	"imgLink" : "images/global/homebg.jpg",
 	"imgAlt": "Home Header",
 	"classNames" : "home"
 }
-
-if (window.kuldipWeb == undefined)
-	window.kuldipWeb = {};
 window.kuldipWeb.headHome = headHome;
 
 
@@ -14,9 +14,6 @@ var headEasyTabs = {
 	"imgAlt": "EasyTab Header",
 	"classNames" : "home inner"
 }
-
-if (window.kuldipWeb == undefined)
-	window.kuldipWeb = {};
 window.kuldipWeb.headEasyTabs = headEasyTabs;
 
 var headAboutMe = {
@@ -24,9 +21,6 @@ var headAboutMe = {
 	"imgAlt": "EasyTab Header",
 	"classNames" : "home inner"
 }
-
-if (window.kuldipWeb == undefined)
-	window.kuldipWeb = {};
 window.kuldipWeb.headAboutMe = headAboutMe;
 
 var headContactMe = {
@@ -34,7 +28,4 @@ var headContactMe = {
 	"imgAlt": "EasyTab Header",
 	"classNames" : "home inner"
 }
-
-if (window.kuldipWeb == undefined)
-	window.kuldipWeb = {};
 window.kuldipWeb.headContactMe = headContactMe;

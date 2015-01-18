@@ -1,22 +1,22 @@
 var app = angular.module("kuldipWeb", []);
 
-var education = window.kuldipWeb.resumeEducation;
 app.controller('educationController', function ($scope) {
-		$scope.fieldHeader = education.header;
-		$scope.dataset = education.detail;
+	var education = window.kuldipWeb.resumeEducation;
+	$scope.fieldHeader = education.header;
+	$scope.dataset = education.detail;
 });
 
-var experience = window.kuldipWeb.resumeExperience;
 app.controller('experienceController', function ($scope) {
-		$scope.fieldHeader = experience.header;
-		$scope.dataset = experience.detail;
+	var experience = window.kuldipWeb.resumeExperience;
+	$scope.fieldHeader = experience.header;
+	$scope.dataset = experience.detail;
 });
 
 
-var project = window.kuldipWeb.resumeProject;
 app.controller('projectController', function ($scope) {
-		$scope.fieldHeader = project.header;
-		$scope.dataset = project.detail;
+	var project = window.kuldipWeb.resumeProject;
+	$scope.fieldHeader = project.header;
+	$scope.dataset = project.detail;
 });
 
 var resumePage = (function () {

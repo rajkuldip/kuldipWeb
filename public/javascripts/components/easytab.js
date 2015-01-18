@@ -1,28 +1,28 @@
 var app = angular.module("kuldipWeb", []);
 
-var headHome = window.kuldipWeb.headHome;
 app.controller('home', function ($scope) {
+	var headHome = window.kuldipWeb.headHome;
 	$scope.classNames = headHome.classNames;
 	$scope.imgLink = headHome.imgLink;
 	$scope.imgAlt = headHome.imgAlt;
 });
 
-var headEasyTabs = window.kuldipWeb.headEasyTabs;
 app.controller('easyTabHead', function ($scope) {
+	var headEasyTabs = window.kuldipWeb.headEasyTabs;
 	$scope.classNames = headEasyTabs.classNames;
 	$scope.imgLink = headEasyTabs.imgLink;
 	$scope.imgAlt = headEasyTabs.imgAlt;
 });
 
-var headAboutMe = window.kuldipWeb.headAboutMe;
 app.controller('headAboutMe', function ($scope) {
+	var headAboutMe = window.kuldipWeb.headAboutMe;
 	$scope.classNames = headAboutMe.classNames;
 	$scope.imgLink = headAboutMe.imgLink;
 	$scope.imgAlt = headAboutMe.imgAlt;
 });
 
-var welcomeJSON = window.kuldipWeb.welcomeJSON;
 app.controller('mainInfo', function ($scope) {
+	var welcomeJSON = window.kuldipWeb.welcomeJSON;
 	$scope.title = welcomeJSON.title;
 	$scope.info_content = welcomeJSON.main_info;
 	$scope.showButton = welcomeJSON.showButton;
@@ -31,8 +31,8 @@ app.controller('mainInfo', function ($scope) {
 	$scope.classNames = welcomeJSON.classNames;
 });
 
-var easyTabs = window.kuldipWeb.easyTabs;
 app.controller('easyTabs', function ($scope) {
+	var easyTabs = window.kuldipWeb.easyTabs;
 	$scope.title = easyTabs.title;
 	$scope.info_content = easyTabs.main_info;
 	$scope.showButton = easyTabs.showButton;

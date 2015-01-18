@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include partials/templates/head.ejs %>
+</head>
+<body ng-app="kuldipWeb" class='<%= className%>'>
+	<div class="container" ng-controller="galleryController">
+        <div class="wallpaper">
+            <img class="wallpaper1 active" src=''></img>
+            <img class="wallpaper2" src=''></img>
+        </div>
+        <p class="imageCaption">{{imgCaption}}</p>
+        <a href='#' class='icon-circle-with-minus menu-list show'></a>
+        <div class="mainGallery">
+            <a class='fa icon-chevron-with-circle-left gallery-prev' href="#"></a>
+            <div class="galleryContainer">
+                <ul class="clearfix">
+                    <li ng-repeat="gallerySet in gallery">
+                        <a href="#" title="{{gallerySet.imgAlt}}" ng-click="clickHandler($event, $index)">
+                            <img ng-src="{{gallerySet.imgLink}}" alt='{{gallerySet.imgAlt}}'>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a class='fa icon-chevron-with-circle-right gallery-next' href="#"></a>
+        </div>
+
+    </div>
+    <% include partials/templates/defaultjs.ejs %>
+
+</body>
+</html>
