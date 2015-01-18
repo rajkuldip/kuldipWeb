@@ -5,7 +5,6 @@ app.controller('galleryController', function ($scope) {
 	$scope.imgCaption = $scope.gallery[0].imgCaption;
 	$scope.clickHandler = function ($event, $index) {
 		$event.preventDefault();
-		console.log($index);
 		if (!$($event.target).hasClass('active')) {
 			$($event.target).addClass('active').parents('li').siblings().find('img').removeClass('active');
 			var images = $('.gallery').find('.wallpaper img');
@@ -29,6 +28,8 @@ var kuldipGallery = (function (window, undefined) {
 		thumbnailNos = 5;
 		thumbnailWidth = 83,
 		gutterSpace = 10,
+		leftClickTime = 0,
+		rightClickTime = 0,
 		showWidth = (thumbnailNos * thumbnailWidth) + (thumbnailNos * gutterSpace);
 		fullWidth = (galleryJSON.length * thumbnailWidth) + (galleryJSON.length * gutterSpace);
 
@@ -66,7 +67,6 @@ var kuldipGallery = (function (window, undefined) {
 			}
 		}
 	}
-
 	var _initialize = function () {
 		$(wallpaper).find('.wallpaper1').attr('src', galleryJSON[0].imgLink);
 		$(mainGallery).find('.galleryContainer').width(showWidth);
@@ -76,11 +76,19 @@ var kuldipGallery = (function (window, undefined) {
 		}).attr('data-left', 0);
 		$(mainGallery).find('.gallery-prev').on('click', function (event) {
 			event.preventDefault();
-			_handleClick(this);
+            var timeNow = new Date().getTime();
+            if (timeNow - leftClickTime > 1000) {
+				_handleClick(this);
+				leftClickTime = timeNow;
+            }
 		});
 		$(mainGallery).find('.gallery-next').on('click', function (event) {
 			event.preventDefault();
-			_handleClick(this);
+            var timeNow = new Date().getTime();
+			if (timeNow - rightClickTime > 1000) {
+				_handleClick(this);
+				rightClickTime = timeNow;
+            }
 		});
 		_showHideMenu();
 	}
