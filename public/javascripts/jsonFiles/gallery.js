@@ -17,7 +17,7 @@ var gallery = {
 	{
 		"imgLink" : "/images/gallery/cake.jpg",
 		"imgAlt": "Bike",
-		"imgCaption" : "A cake from valentine on valentine"
+		"imgCaption" : "A cake from valentine on Valentine's Day"
 	},
 	{
 		"imgLink" : "/images/gallery/bangles.jpg",
