@@ -1,122 +1,122 @@
 var gallery = {
 	list: [{
 		"imgLink" : "/images/gallery/sofas.jpg",
-		"imgAlt": "My Home",
+		"imgAlt" : "An abstract from corner",
 		"imgCaption" : "An abstract from corner"
 	},
 	{
 		"imgLink" : "/images/gallery/leaf.jpg",
-		"imgAlt": "Bike",
-		"imgCaption" : "They kept our gallery full of life.. always"
+		"imgCaption" : "They kept our gallery full of life.. always",
+		"imgAlt" : "They kept our gallery full of life.. always"
 	},
 	{
 		"imgLink" : "/images/gallery/hand.jpg",
-		"imgAlt": "Bike",
-		"imgCaption" : "Once in a while, playing with sun is not that bad idea"
+		"imgCaption" : "Once in a while, playing with sun is not that bad idea",
+		"imgAlt" : "Once in a while, playing with sun is not that bad idea"
 	},
 	{
 		"imgLink" : "/images/gallery/cake.jpg",
-		"imgAlt": "Bike",
-		"imgCaption" : "A cake from valentine on Valentine's Day"
+		"imgCaption" : "A cake from valentine on Valentine's Day",
+		"imgAlt" : "A cake from valentine on Valentine's Day"
 	},
 	{
 		"imgLink" : "/images/gallery/bangles.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "An abstract pic",
 		"imgCaption" : "An abstract pic"
 	},
 	{
 		"imgLink" : "/images/gallery/birds.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "An evening at lake side",
 		"imgCaption" : "An evening at lake side"
 	},
 	{
 		"imgLink" : "/images/gallery/shadow.jpg",
-		"imgAlt": "Bike",
-		"imgCaption" : "Back from party"
+ 		"imgAlt" : "Back from party",
+ 		"imgCaption" : "Back from party"
 	},
 	{
 		"imgLink" : "/images/gallery/night.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "Lights from middle of the lake",
 		"imgCaption" : "Lights from middle of the lake"
 	},
 	{
 		"imgLink" : "/images/gallery/shiv.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "At temple.... such an amazing moment",
 		"imgCaption" : "At temple.... such an amazing moment"
 	},
 	{
 		"imgLink" : "/images/gallery/sunshine.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "Sunshine from Train",
 		"imgCaption" : "Sunshine from Train"
 	},
 	{
 		"imgLink" : "/images/gallery/mirror.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "She does love... herself :)",
 		"imgCaption" : "She does love... herself :)"
 	},
 	{
 		"imgLink" : "/images/gallery/face.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "God... At Kartikeyan Temple",
 		"imgCaption" : "God... At Kartikeyan Temple"
 	},
 	{
 		"imgLink" : "/images/gallery/sunset.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "Sunset from Train.. Such an amazing time it was.",
 		"imgCaption" : "Sunset from Train.. Such an amazing time it was."
 	},
 	{
 		"imgLink" : "/images/gallery/birthday.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "Time for birthday celebration",
 		"imgCaption" : "Time for birthday celebration"
 	},
 	{
 		"imgLink" : "/images/gallery/railway.jpg",
-		"imgAlt": "Bike",
-		"imgCaption" : "Ahmedabad Railway station"
+		"imgCaption" : "Ahmedabad Railway station",
+		"imgAlt" : "Ahmedabad Railway station"
 	},
 	{
 		"imgLink" : "/images/gallery/baloon.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "They just love to play... and I love to watch them play :)",
 		"imgCaption" : "They just love to play... and I love to watch them play :)"
 	},
 	{
 		"imgLink" : "/images/gallery/balcony.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "Just an abstrac pic from balcony",
 		"imgCaption" : "Just an abstrac pic from balcony"
 	},
 	{
 		"imgLink" : "/images/gallery/celebration.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "Diwali celebration",
 		"imgCaption" : "Diwali celebration"
 	},
 	{
 		"imgLink" : "/images/gallery/showPiece.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "Just an abstract view",
 		"imgCaption" : "Just an abstract view"
 	},
 	{
 		"imgLink" : "/images/gallery/temple.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "A calm evening. A calm atmosphere.",
 		"imgCaption" : "A calm evening. A calm atmosphere."
 	},
 	{
 		"imgLink" : "/images/gallery/ganpati.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "Lord Ganpati... ",
 		"imgCaption" : "Lord Ganpati... "
 	},
 	{
 		"imgLink" : "/images/gallery/lake.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "Top view of Lake... ",
 		"imgCaption" : "Top view of Lake... "
 	},
 	{
 		"imgLink" : "/images/gallery/evening.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "How pleasant to spend an evening at lake side",
 		"imgCaption" : "How pleasant to spend an evening at lake side"
 	},
 	{
 		"imgLink" : "/images/gallery/sky.jpg",
-		"imgAlt": "Bike",
+		"imgAlt" : "A wish... A desire... To fly",
 		"imgCaption" : "A wish... A desire... To fly"
 	}]
 }
