@@ -70,16 +70,16 @@
 				width: 77px;
 				background: rgba(255, 255, 255, .3);
 				> a {
-					-webkit-filter: grayscale(1);
-					&:hover {
-						-webkit-filter: grayscale(0);
-					}
-					&.selected {
-						-webkit-filter: grayscale(0);
-					}
 					img {
 						height: 40px;
 						display: block;
+						-webkit-filter: grayscale(1);
+						&:hover {
+							-webkit-filter: grayscale(0);
+						}
+						&.active {
+							-webkit-filter: grayscale(0);
+						}
 					}
 				}
 			}
@@ -108,5 +108,30 @@
 		background: rgba(255,255,255,.7);
 		text-transform: uppercase;
 		font-size: .75em;
+	}
+	.galleryNav {
+		position: fixed;
+		bottom: 42px;
+		right: 50px;
+		> a {
+			font-size: 3em;
+			color: #fff;
+			text-decoration: none;
+			line-height: .95em;
+			width: 25px;
+			position: relative;
+			float: left;
+			height: 42px;
+			margin: 0 10px;
+			overflow: hidden;
+			&.icon-chevron-thin-left:before,
+			&.icon-chevron-thin-right:before {
+				width: 30px;
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				left: -10px;
+			}
+		}
 	}
 }

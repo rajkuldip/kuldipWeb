@@ -17,7 +17,61 @@ app.controller('galleryController', function ($scope) {
 			})
 			$scope.imgCaption = $scope.gallery[$index].imgCaption;
 		}
-	}
+	};
+	$scope.navigateImage = function ($event, $index) {
+		$event.preventDefault();
+		if ($($event.target).hasClass('gallery-right')) {
+			var totalLists = $('.gallery').find('.galleryContainer ul li');
+			var currentIndex = $(totalLists).find('.active').parents('li').attr('data-index');
+			$.each(totalLists, function (index, value) {
+				if (totalLists[index+1] != undefined) {
+					var dataIndex = $(value).attr('data-index');
+					if (dataIndex == currentIndex) {
+						var nextIndex = parseInt($(totalLists[index+1]).attr('data-index')) + 1;
+						if ((nextIndex % 5) == 1) {
+							$('.gallery-next').trigger('click');
+						}
+						var currentImage  = $(totalLists[index+1]).find('a img');
+						$(currentImage).addClass('active').parents('li').siblings().find('img').removeClass('active');
+						var images = $('.gallery').find('.wallpaper img');
+						$(images).not('.active').attr('src', $(currentImage).attr('src'));
+						$.each(images, function (index, val) {
+							if ($(val).hasClass('active'))
+								$(val).removeClass('active');
+							else
+								$(val).addClass('active');
+						})
+						$scope.imgCaption = $scope.gallery[index+1].imgCaption;
+					}
+				}
+			})
+		} else {
+			var totalLists = $('.gallery').find('.galleryContainer ul li');
+			var currentIndex = $(totalLists).find('.active').parents('li').attr('data-index');
+			$.each(totalLists, function (index, value) {
+				if (totalLists[index-1] != undefined) {
+					var dataIndex = $(value).attr('data-index');
+					if (dataIndex == currentIndex) {
+						var nextIndex = parseInt($(totalLists[index-1]).attr('data-index')) + 1;
+						if ((nextIndex % 5) == 0) {
+							$('.gallery-prev').trigger('click');
+						}
+						var currentImage  = $(totalLists[index-1]).find('a img');
+						$(currentImage).addClass('active').parents('li').siblings().find('img').removeClass('active');
+						var images = $('.gallery').find('.wallpaper img');
+						$(images).not('.active').attr('src', $(currentImage).attr('src'));
+						$.each(images, function (index, val) {
+							if ($(val).hasClass('active'))
+								$(val).removeClass('active');
+							else
+								$(val).addClass('active');
+						})
+						$scope.imgCaption = $scope.gallery[index-1].imgCaption;
+					}
+				}
+			})
+		}
+	};
 });
 
 var kuldipGallery = (function (window, undefined) {
@@ -74,6 +128,8 @@ var kuldipGallery = (function (window, undefined) {
 			"width": fullWidth,
 			"left": 0
 		}).attr('data-left', 0);
+		var firstListItem = $(mainGallery).find('.galleryContainer ul').find('li')[0];
+		$(firstListItem).find('img').addClass('active');
 		$(mainGallery).find('.gallery-prev').on('click', function (event) {
 			event.preventDefault();
             var timeNow = new Date().getTime();

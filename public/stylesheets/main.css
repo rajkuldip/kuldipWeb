@@ -1997,22 +1997,19 @@ body .home {
   width: 77px;
   background: rgba(255, 255, 255, 0.3);
 }
-/* line 72, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
-.gallery .mainGallery ul li > a {
-  -webkit-filter: grayscale(1);
-}
-/* line 74, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
-.gallery .mainGallery ul li > a:hover {
-  -webkit-filter: grayscale(0);
-}
-/* line 77, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
-.gallery .mainGallery ul li > a.selected {
-  -webkit-filter: grayscale(0);
-}
-/* line 80, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 73, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .mainGallery ul li > a img {
   height: 40px;
   display: block;
+  -webkit-filter: grayscale(1);
+}
+/* line 77, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+.gallery .mainGallery ul li > a img:hover {
+  -webkit-filter: grayscale(0);
+}
+/* line 80, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+.gallery .mainGallery ul li > a img.active {
+  -webkit-filter: grayscale(0);
 }
 /* line 88, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .menu-list {
@@ -2040,4 +2037,31 @@ body .home {
   background: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
   font-size: .75em;
+}
+/* line 112, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+.gallery .galleryNav {
+  position: fixed;
+  bottom: 42px;
+  right: 50px;
+}
+/* line 116, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+.gallery .galleryNav > a {
+  font-size: 3em;
+  color: #fff;
+  text-decoration: none;
+  line-height: .95em;
+  width: 25px;
+  position: relative;
+  float: left;
+  height: 42px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+/* line 128, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+.gallery .galleryNav > a.icon-chevron-thin-left:before, .gallery .galleryNav > a.icon-chevron-thin-right:before {
+  width: 30px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -10px;
 }

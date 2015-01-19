@@ -15,7 +15,7 @@
             <a class='fa icon-chevron-with-circle-left gallery-prev' href="#"></a>
             <div class="galleryContainer">
                 <ul class="clearfix">
-                    <li ng-repeat="gallerySet in gallery">
+                    <li ng-repeat="gallerySet in gallery" data-index='{{$index}}'>
                         <a href="#" title="{{gallerySet.imgAlt}}" ng-click="clickHandler($event, $index)">
                             <img ng-src="{{gallerySet.imgLink}}" alt='{{gallerySet.imgAlt}}'>
                         </a>
@@ -23,6 +23,10 @@
                 </ul>
             </div>
             <a class='fa icon-chevron-with-circle-right gallery-next' href="#"></a>
+        </div>
+        <div class="galleryNav">
+            <a class='fa icon-chevron-thin-left gallery-left' href="#" title='Previous' ng-click="navigateImage($event, $index)"></a>
+            <a class='fa icon-chevron-thin-right gallery-right' href="#" title='Next' ng-click="navigateImage($event, $index)"></a>
         </div>
 
     </div>
