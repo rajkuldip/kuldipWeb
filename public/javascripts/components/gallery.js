@@ -42,6 +42,7 @@ app.controller('galleryController', function ($scope) {
 								$(val).addClass('active');
 						})
 						$scope.imgCaption = $scope.gallery[index+1].imgCaption;
+						kuldipGallery.updateNav(totalLists.length, index+2);
 					}
 				}
 			})
@@ -67,6 +68,7 @@ app.controller('galleryController', function ($scope) {
 								$(val).addClass('active');
 						})
 						$scope.imgCaption = $scope.gallery[index-1].imgCaption;
+						kuldipGallery.updateNav(totalLists.length, index);
 					}
 				}
 			})
@@ -84,9 +86,14 @@ var kuldipGallery = (function (window, undefined) {
 		gutterSpace = 1,
 		leftClickTime = 0,
 		rightClickTime = 0,
+		storedIndexValue = 1,
 		showWidth = (thumbnailNos * thumbnailWidth) + (thumbnailNos * gutterSpace);
 		fullWidth = (galleryJSON.length * thumbnailWidth) + (galleryJSON.length * gutterSpace);
-
+	var updateNav = function (totalLength, currentIndex) {
+		var indexValue = Math.ceil(currentIndex/thumbnailNos);
+		var updateLeft = parseInt(-((indexValue-1) * showWidth));
+		$(mainGallery).find('.galleryContainer ul').css('left', updateLeft).attr('data-left', indexValue);
+	}
 	var _showHideMenu = function () {
 		$('.menu-list').on('click', function (event) {
 			event.preventDefault();
@@ -148,12 +155,15 @@ var kuldipGallery = (function (window, undefined) {
 		});
 		_showHideMenu();
 	}
-	var _init = function () {
+	var init = function () {
 		$(document).ready(function () {
 			_initialize();
 		})
 	}
 	return {
-		init: _init
+		init: init,
+		updateNav : updateNav
 	}
-})(window).init();
+})(window);
+
+kuldipGallery.init();
