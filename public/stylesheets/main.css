@@ -1925,13 +1925,14 @@ body .home {
   transition: all 1s;
   opacity: 0;
   height: 100%;
+  min-width: 100%;
   position: fixed;
 }
-/* line 13, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 14, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .wallpaper img.active {
   opacity: 1;
 }
-/* line 18, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 19, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .mainGallery {
   text-align: center;
   position: absolute;
@@ -1940,18 +1941,18 @@ body .home {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 25, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 26, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .mainGallery.hide {
   width: 0;
   opacity: 0;
 }
-/* line 29, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 30, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .mainGallery .galleryContainer {
   height: 46px;
   overflow: hidden;
   position: relative;
 }
-/* line 34, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 35, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .mainGallery > .fa {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
@@ -1962,23 +1963,23 @@ body .home {
   position: absolute;
   top: 16px;
 }
-/* line 43, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 44, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .mainGallery > .fa.icon-chevron-with-circle-left {
   left: -35px;
 }
-/* line 46, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 47, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .mainGallery > .fa.icon-chevron-with-circle-right {
   right: -35px;
 }
-/* line 49, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 50, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .mainGallery > .fa:hover {
   background: #000;
 }
-/* line 52, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 53, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .mainGallery > .fa.disabled:hover {
   background: rgba(0, 0, 0, 0.3);
 }
-/* line 57, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 58, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .mainGallery ul {
   display: inline-block;
   height: 46px;
@@ -1986,7 +1987,7 @@ body .home {
   -webkit-transition: all .5s;
   transition: all .5s;
 }
-/* line 63, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 64, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .mainGallery ul li {
   height: 40px;
   overflow: hidden;
@@ -1997,21 +1998,21 @@ body .home {
   width: 77px;
   background: rgba(255, 255, 255, 0.3);
 }
-/* line 73, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 74, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .mainGallery ul li > a img {
   height: 40px;
   display: block;
   -webkit-filter: grayscale(1);
 }
-/* line 77, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 78, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .mainGallery ul li > a img:hover {
   -webkit-filter: grayscale(0);
 }
-/* line 80, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 81, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .mainGallery ul li > a img.active {
   -webkit-filter: grayscale(0);
 }
-/* line 88, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 89, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .menu-list {
   position: absolute;
   z-index: 1;
@@ -2023,11 +2024,11 @@ body .home {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 98, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 99, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .menu-list:hover {
   opacity: 1;
 }
-/* line 102, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 103, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .imageCaption {
   position: absolute;
   z-index: 1;
@@ -2038,13 +2039,13 @@ body .home {
   text-transform: uppercase;
   font-size: .75em;
 }
-/* line 112, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 113, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .galleryNav {
   position: fixed;
   bottom: 42px;
   right: 50px;
 }
-/* line 116, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 117, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .galleryNav > a {
   font-size: 3em;
   color: #fff;
@@ -2057,7 +2058,7 @@ body .home {
   margin: 0 10px;
   overflow: hidden;
 }
-/* line 128, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
+/* line 129, /Users/kraj2/Documents/Kuldip Data/Work/kuldip/kuldipWeb/public/stylesheets/globalSCSS/../contents/gallery.scss */
 .gallery .galleryNav > a.icon-chevron-thin-left:before, .gallery .galleryNav > a.icon-chevron-thin-right:before {
   width: 30px;
   display: inline-block;

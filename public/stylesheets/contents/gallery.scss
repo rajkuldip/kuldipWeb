@@ -9,6 +9,7 @@
 			transition: all 1s;
 			opacity: 0;
 			height: 100%;
+			min-width: 100%;
 			position: fixed;
 			&.active {
 				opacity: 1;
